@@ -9,56 +9,57 @@
 <body>
   <header class="page-header">
     <button class="page-header__toggle" type="button" aria-label="Открыть\закрыть меню"></button>
-    <a class="page-header__telephone" href="tel:88126901010">8 (812) 690-10-10</a>
+    <a class="page-header__phone" href="tel:88126901010">8 (812) 690-10-10</a>
+    <section class="first-page">
+      <p class="first-page__slogan">Почувствуй расслабление в своем теле</p>
+      <h1 class="first-page__title">YOGA</h1>
+      <a class="first-page__link" href="#">Запишитесь на бесплатное пробное занятие</a>
+    </section>
   </header>
   <main>
-    <section class="test-lesson">
-      <p class="test-lesson__text">Почувствуй расслабление в своем теле</p>
-      <h1 class="test-lesson__title">YOGA</h1>
-      <a class="test-lesson__link" href="#">Запишитесь на бесплатное пробное занятие</a>
-    </section>
-    <section class="directions">
-      <h2 class="directions__title">Направления</h2>
-      <ul class="directions__list">
-        <li class="directions__item">
+    <section class="directions section">
+      <h2 class="directions__title section__title">Направления</h2>
+      <div class="directions__wrapper">
+        <div class="directions__item directions__item--main">
           <img class="directions__img" src="" alt="Хатха-йога">
-          <div class="directions__wrapper">
+          <div class="directions__info-wrapper">
             <h3 class="directions__name">Хатха-йога</h3>
             <p class="directions__days">Пн, Ср, Пт - с 12:00 до 15:00</p>
             <p class="directions__days">Вт, Чт - с 18:00 до 21:00</p>
-            <span class="directions__instructor-title">Инструктор</span>
-            <a class="directions__instructor" href="#">Емельянова Полина</a>
+            <a class="directions__instructor" href="#">Инструктор Емельянова Полина</a>
           </div>
-          <a class="directions__link" href="#" aria-label="Записаться на занятие"></a>
-        </li>
-        <li class="directions__item">
-          <img class="directions__img" src="" alt="Ашатанга-йога">
-          <div class="directions__wrapper">
-            <h3 class="directions__name">Ашатанга-йога</h3>
-            <p class="directions__days">Пн, Ср, Пт - с 11:00 до 14:00</p>
-            <p class="directions__days">Вт, Чт - с 19:00 до 21:00</p>
-            <span class="directions__instructor-title">Инструктор</span>
-            <a class="directions__instructor" href="#">Емельянова Полина</a>
-          </div>
-          <a class="directions__link" href="#" aria-label="Записаться на занятие"></a>
-        </li>
-        <li class="directions__item">
-          <img class="directions__img" src="" alt="Кундалини-йога">
-          <div class="directions__wrapper">
-            <h3 class="directions__name">Кундалини-йога</h3>
-            <p class="directions__days">Пн, Ср, Пт - с 12:00 до 15:00</p>
-            <p class="directions__days">Вт, Чт - с 18:00 до 21:00</p>
-            <span class="directions__instructor-title">Инструктор</span>
-            <a class="directions__instructor" href="#">Емельянова Полина</a>
-          </div>
-          <a class="directions__link" href="#" aria-label="Записаться на занятие"></a>
-        </li>
-      </ul>
+          <a class="directions__link button button--right" href="#" aria-label="Записаться на занятие"></a>
+        </div>
+        <ul class="directions__list">
+          <li class="directions__item">
+            <img class="directions__img" src="" alt="Ашатанга-йога">
+            <div class="directions__info-wrapper">
+              <h3 class="directions__name">Ашатанга-йога</h3>
+              <p class="directions__days">Пн, Ср, Пт - с 11:00 до 14:00</p>
+              <p class="directions__days">Вт, Чт - с 19:00 до 21:00</p>
+              <a class="directions__instructor" href="#">Инструктор Емельянова Полина</a>
+            </div>
+            <a class="directions__link button button--right button--card" href="#"
+               aria-label="Записаться на занятие"></a>
+          </li>
+          <li class="directions__item">
+            <img class="directions__img" src="" alt="Кундалини-йога">
+            <div class="directions__info-wrapper">
+              <h3 class="directions__name">Кундалини-йога</h3>
+              <p class="directions__days">Пн, Ср, Пт - с 12:00 до 15:00</p>
+              <p class="directions__days">Вт, Чт - с 18:00 до 21:00</p>
+              <a class="directions__instructor" href="#">Инструктор Емельянова Полина</a>
+            </div>
+            <a class="directions__link button button--right button--card" href="#"
+               aria-label="Записаться на занятие"></a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="subscriptions">
-      <h2 class="subscriptions__title">Абонементы</h2>
+    <section class="subscriptions section">
+      <h2 class="subscriptions__title section__title">Абонементы</h2>
       <form class="subscriptions__form month-select" method="GET">
-        <label class="month-select__radio">
+        <label class="month-select__radio month-select__radio--active">
           <input class="month-select__input visually-hidden" type="radio" name="months" value="1 месяц" checked>1 месяц
         </label>
         <label class="month-select__radio">
@@ -71,32 +72,32 @@
       <ul class="subscriptions__list">
         <li class="subscriptions__item">
           <h3 class="subscriptions__name">Утро</h3>
-          <p class="subscriptions__text">Посещение с 11:00 до 16:00</p>
+          <p class="subscriptions__time">Посещение с 11:00 до 16:00</p>
           <span class="subscriptions__price">1 300 Р</span>
           <a class="subscriptions__link" href="#">Заказать абонемент</a>
         </li>
-        <li class="subscriptions__item">
+        <li class="subscriptions__item subscriptions__item--active">
           <h3 class="subscriptions__name">Безлимит</h3>
-          <p class="subscriptions__text">Посещение не ограничено по времени</p>
+          <p class="subscriptions__time">Посещение не ограничено по времени</p>
           <span class="subscriptions__price">2 800 Р</span>
           <a class="subscriptions__link" href="#">Заказать абонемент</a>
         </li>
         <li class="subscriptions__item">
           <h3 class="subscriptions__name">Вечер</h3>
-          <p class="subscriptions__text">Посещение с 17:00 до 21:00</p>
+          <p class="subscriptions__time">Посещение с 17:00 до 21:00</p>
           <span class="subscriptions__price">2 000 Р</span>
           <a class="subscriptions__link" href="#">Заказать абонемент</a>
         </li>
       </ul>
     </section>
-    <section class="team">
-      <h2 class="team__title">Наша команда</h2>
+    <section class="team section">
+      <h2 class="team__title section__title">Наша команда</h2>
       <ul class="team__list">
         <li class="team__item">
           <div class="team__card-wrapper card">
             <img class="card__avatar" src="" alt="Серёжа Попов">
             <div class="card__wrapper">
-              <p class="card__info">Инструктор Серёжа Попов</p>
+              <p class="card__info"><span class="card__position">Инструктор </span>Серёжа Попов</p>
               <p class="card__direction">Хатха-йога</p>
             </div>
             <div class="card__wrapper">
@@ -115,12 +116,14 @@
         </li>
       </ul>
       <div class="team__buttons-wrapper">
-        <button class="team__btn slider-btn slider-btn--left" type="button" aria-label="Предыдущий Инструктор"></button>
-        <button class="team__btn slider-btn slider-btn--right" type="button" aria-label="Следующий Инструктор"></button>
+        <button class="team__button button button--left button--slider button--disabled" type="button"
+                aria-label="Предыдущий Инструктор"></button>
+        <button class="team__button button button--right button--slider" type="button"
+                aria-label="Следующий Инструктор"></button>
       </div>
     </section>
-    <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+    <section class="reviews section">
+      <h2 class="reviews__title section__title">Отзывы</h2>
       <div class="reviews__list">
         <blockquote class="reviews__item">
           <p class="reviews__text">Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после
@@ -141,16 +144,16 @@
         </blockquote>
       </div>
       <div class="reviews__slider-wrapper">
-        <button class="reviews__btn slider-btn slider-btn--left" type="button"
+        <button class="reviews__btn button button--left button--slider button--disabled" type="button"
                 aria-label="Предыдущий комментарий"></button>
         <p class="reviews__counter"><span class="reviews__start">1</span> / <span class="reviews__end">9</span></p>
-        <button class="reviews__btn slider-btn slider-btn--right" type="button"
+        <button class="button button--right button--slider" type="button"
                 aria-label="Следующий комментарий"></button>
       </div>
     </section>
     <footer class="page-footer">
-      <section class="page-footer-form record">
-        <h2 class="record__title">Запишитесь на бесплатное пробное занятие</h2>
+      <section class="page-footer-form section record">
+        <h2 class="record__title section__title">Запишитесь на бесплатное пробное занятие</h2>
         <form class="form" method="POST" action="https://echo.htmlacademy.ru">
           <label class="form__label input-data">
             <input class="input-data__field" type="text" name="name" placeholder="Ваше имя" required>
@@ -160,7 +163,7 @@
                    pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" name="phone" placeholder="Ваш телефон"
                    required>
           </label>
-          <button class="form__send-btn" type="submit">Оставить заявку</button>
+          <button class="form__send-button" type="submit">Оставить заявку</button>
         </form>
       </section>
       <div class="page-footer__contacts">
@@ -195,7 +198,7 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <p class="page-footer__laws">© 2018 Все права защищены</p>
+        <p class="page-footer__rights">© 2018 Все права защищены</p>
         <a class="page-footer__link" href="yogaspb.com">Yogaspb.com</a>
       </div>
     </footer>
