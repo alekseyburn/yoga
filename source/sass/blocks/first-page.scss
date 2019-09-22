@@ -1,0 +1,22 @@
+.first-page {
+  background-color: $purple;
+}
+
+.first-page__slogan {
+  height: 0;
+  padding-top: 18px;
+  overflow: hidden;
+
+  background: #000000;
+}
+
+.first-page__title {
+  font-size: 67px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.first-page__link {
+  line-height: 120%;
+  color: $second-text;
+}

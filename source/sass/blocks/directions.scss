@@ -1,0 +1,12 @@
+.directions__list {
+  @include reset-list;
+}
+
+.directions__name {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.directions__instructor {
+  color: $second-text;
+}

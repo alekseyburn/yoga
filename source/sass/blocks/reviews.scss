@@ -1,0 +1,22 @@
+.reviews__item {
+  background-color: $white;
+}
+
+.reviews__author {
+  font-size: 12px;
+  line-height: 20px;
+  color: $second-text;
+  font-style: normal;
+}
+
+.reviews__date {
+  color: rgba($main-text, 0.7);
+}
+
+.reviews__counter {
+  font-size: 12px;
+}
+
+.reviews__end {
+  font-size: 10px;
+}
