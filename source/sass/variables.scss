@@ -1,18 +1,22 @@
 $white: #ffffff;
 $black: #000000;
+$main-text: #8E80A9;
+$second-text: #E65C7B;
+$purple: #8373A1;
+$main-bg: #FCF8FE;
+$light-purple: #C8C0DB;
 
-
-$font: "Open Sans", "Arial", sans-serif;
+$font: "Geometria", "Arial", sans-serif;
 
 $mobile-indent: 30px; //используется для отступов (margin-bottom, padding слева и справа)
 $tablet-indent: 50px;
 
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1150px;
+$desktop-width: 1440px;
 
 $mobile-width-only: 767px;
-$tablet-width-only: 1149px;
+$tablet-width-only: 1439px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

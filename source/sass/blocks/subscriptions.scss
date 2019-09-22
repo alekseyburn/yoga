@@ -1,0 +1,29 @@
+.subscriptions__list {
+  @include reset-list;
+}
+
+.subscriptions__item {
+  background-color: $white;
+}
+
+.subscriptions__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.subscriptions__time {
+  color: $second-text;
+}
+
+.subscriptions__price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.subscriptions__link {
+  color: $white;
+
+  background-color: $main-text;
+}

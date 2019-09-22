@@ -1,0 +1,29 @@
+.contacts {
+  @include reset-list;
+
+  background-color: $purple;
+}
+
+.contacts__item {
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+}
+
+.contacts__address {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.contacts__schedule {
+  font-size: 12px;
+}
+
+.contacts__phone {
+  color: $white;
+}
+
+.contacts__mail {
+  font-size: 12px;
+  color: $white;
+}

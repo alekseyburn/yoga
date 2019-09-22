@@ -1,0 +1,7 @@
+.team__list {
+  @include reset-list;
+}
+
+.team__skill {
+  color: $second-text;
+}
