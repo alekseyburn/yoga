@@ -1,4 +1,17 @@
+.form__label {
+  display: block;
+  margin-bottom: 27px;
+
+  &:last-of-type {
+    margin-bottom: 34px;
+  }
+}
+
 .form__send-button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+
   font: inherit;
   font-size: 14px;
   line-height: 20px;

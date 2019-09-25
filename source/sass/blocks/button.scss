@@ -1,4 +1,45 @@
 .button {
   background-color: $main-text;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 9px 13px;
   border: none;
+
+  &--right {
+    background-image: url("../img/icon-arrow-right.svg");
+  }
+
+  &--left {
+    background-image: url("../img/icon-arrow-left.svg");
+  }
+
+  &--disabled {
+    background-color: transparent;
+    border: 1px solid $main-text;
+  }
+
+  &--reviews {
+    width: 31px;
+    height: 16px;
+
+    background-size: 6px 10px;
+  }
+
+  &__slider {
+    position: absolute;
+    top: 77px;
+
+    width: 16px;
+    height: 31px;
+
+    background-size: 6px 10px;
+
+    &--left {
+      left: 15px;
+    }
+
+    &--right {
+      right: 15px;
+    }
+  }
 }

@@ -1,6 +1,28 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 19px $mobile-indent 68px;
 
+  background-image: url("../img/bg-clouds-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header__toggle {
+  width: 30px;
+  height: 13px;
+  margin-left: -20px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  border: none;
+}
 
 .page-header__phone {
+  margin-right: -20px;
   font-size: 12px;
   color: $main-text;
 };
