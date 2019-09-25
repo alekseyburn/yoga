@@ -1,3 +1,4 @@
+
 // определяем, что браузер - ie11, загружаем полифил из cdn
 if (/Trident.*rv:/.test(navigator.userAgent)) {
   document.write(

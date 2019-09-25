@@ -1,13 +1,17 @@
 .contacts {
-  @include reset-list;
-
   background-color: $purple;
 }
 
 .contacts__item {
+  margin-bottom: 17px;
+
   font-size: 14px;
   line-height: 20px;
   color: $white;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__address {
@@ -16,14 +20,20 @@
 }
 
 .contacts__schedule {
+  margin: 0;
+
   font-size: 12px;
 }
 
 .contacts__phone {
+  display: block;
+
   color: $white;
 }
 
 .contacts__mail {
+  display: block;
+
   font-size: 12px;
   color: $white;
 }

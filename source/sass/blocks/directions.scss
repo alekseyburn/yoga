@@ -1,12 +1,57 @@
+.directions {
+  padding: 0 $mobile-indent 37px;
+
+  background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left 145px;
+}
+
+.directions__title {
+  display: block;
+  margin: 0 0 38px;
+}
 .directions__list {
   @include reset-list;
 }
 
+.directions__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
+}
+
+.directions__img {
+  display: block;
+  flex-basis: 100%;
+}
+
+.directions__info-wrapper {
+  flex-basis: 82%;
+  padding: 16px 20px 15px;
+
+  background-color: $white;
+}
+
 .directions__name {
+  margin: 0 0 5px;
+
   font-weight: bold;
   font-size: 12px;
 }
 
+.directions__days {
+  margin: 0;
+
+  &:last-of-type {
+    margin-bottom: 4px;
+  }
+}
 .directions__instructor {
   color: $second-text;
+}
+
+.directions__link {
+  flex-basis: 18%;
 }

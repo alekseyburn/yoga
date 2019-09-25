@@ -27,4 +27,7 @@ body {
   font-family: $font;
   color: $main-text;
   background-color: $main-bg;
+  background-image: url("../img/bg-clouds-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

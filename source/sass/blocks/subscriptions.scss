@@ -1,28 +1,61 @@
+.subscriptions {
+  padding: 0 $mobile-indent 68px;
+
+  background-image: url("../img/bg-subs-patterns-mobile@1x.png"),
+  url("../img/bg-subs-clouds-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 107%, center 66%;
+  background-size: 100%, 100%;
+}
+
+.subscriptions__title {
+  margin: 0 0 34px;
+}
+
 .subscriptions__list {
   @include reset-list;
 }
 
 .subscriptions__item {
+  padding: 24px 51px 30px;
+
+  text-align: center;
+
   background-color: $white;
+  box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .subscriptions__name {
+  margin: 0 0 11px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 125%;
 }
 
 .subscriptions__time {
+  margin: 0 0 10px;
+
   color: $second-text;
 }
 
 .subscriptions__price {
+  display: block;
+  margin-bottom: 20px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
 
 .subscriptions__link {
+  display: block;
+  padding: 10px 23px 9px;
+
   color: $white;
 
   background-color: $main-text;

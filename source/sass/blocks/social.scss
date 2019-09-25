@@ -1,7 +1,23 @@
 .social {
-  background-color: $purple;
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .social__item {
-  @include reset-list;
+  margin-right: 25px;
+}
+
+.social__link {
+  display: block;
+
+  line-height: 0;
+}
+
+.social__svg path {
+  fill: $white;
+  fill-opacity: 1;
 }

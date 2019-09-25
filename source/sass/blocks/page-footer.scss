@@ -1,9 +1,31 @@
+.page-footer__contacts {
+  padding: 44px 35px 34px;
+
+  background-color: $purple;
+}
+
+.page-footer__contacts-list {
+  @include reset-list;
+
+  margin-bottom: 22px;
+}
+
 .page-footer__copyright {
+  padding: 0 $mobile-indent 43px;
+
   font-size: 12px;
   line-height: 20px;
   color: rgba($white, 0.5);
 
   background-color: $purple;
+}
+
+.page-footer__rights {
+  margin: 0 0 12px;
+}
+
+.page-footer__year {
+  margin-right: 6px;
 }
 
 .page-footer__link {

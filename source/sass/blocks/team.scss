@@ -1,7 +1,35 @@
+.team {
+  position: relative;
+
+  padding: 0 $mobile-indent + 11px 62px;
+
+  background-image: url("../img/bg-team-patterns-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 -10%;
+}
+
+.team__title {
+  margin: 0 0 37px;
+}
+
 .team__list {
   @include reset-list;
 }
 
+.team__card-wrapper {
+  margin-bottom: 21px;
+}
+
 .team__skill {
+  margin: 0 0 11px;
+
   color: $second-text;
+}
+
+.team__description {
+  margin: 0 0 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
