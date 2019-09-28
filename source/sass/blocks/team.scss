@@ -16,8 +16,16 @@
   @include reset-list;
 }
 
-.team__card-wrapper {
+.team__column-left {
   margin-bottom: 21px;
+}
+
+.team__cards-list {
+  @include reset-list;
+}
+
+.team__instructor-name {
+  display: none;
 }
 
 .team__skill {
@@ -31,5 +39,85 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.team__counter {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .team {
+    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
+
+    background-image: url("../img/bg-team-patterns-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 19%;
+  }
+
+  .team__title {
+    margin-bottom: 72px;
+  }
+
+  .team__list {
+    margin-bottom: 28px;
+  }
+  .team__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .team__column-left {
+    flex-basis: 271px;
+    margin-right: 43px;
+    margin-bottom: 0;
+  }
+
+
+
+  .team__cards-item {
+    margin-bottom: 57px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .team__column-right {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  .team__instructor-name {
+    display: block;
+    margin: 0 0 6px;
+
+    font-size: 16px;
+  }
+
+  .team__skill {
+    font-size: 12px;
+  }
+
+  .team__description {
+    margin-bottom: 15px;
+  }
+
+  .team__buttons-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
+  }
+
+  .team__counter {
+    display: block;
+    margin: 0 12px 0 10px;
+
+    font-size: 12px;
+  }
+
+  .team__counter--end {
+    font-size: 10px;
   }
 }

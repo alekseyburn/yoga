@@ -10,6 +10,7 @@
   display: block;
   margin: 0 0 38px;
 }
+
 .directions__list {
   @include reset-list;
 }
@@ -48,10 +49,111 @@
     margin-bottom: 4px;
   }
 }
+
 .directions__instructor {
   color: $second-text;
 }
 
 .directions__link {
   flex-basis: 18%;
+}
+
+.directions__link-more {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .directions {
+    padding: 0 $tablet-indent - 11px 119px $tablet-indent;
+
+    background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
+    background-position: left -20px;
+  }
+
+  .directions__title {
+    margin-bottom: 40px;
+  }
+
+  .directions__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .directions__list {
+    flex-basis: 57%;
+  }
+
+  .directions__item {
+    position: relative;
+
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 19px;
+
+    &--main {
+      flex-basis: 39.7%;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(2):not(.directions__item--main) {
+      margin-bottom: 39px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .directions__img {
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 42.5%;
+
+    &--main {
+      flex-basis: 100%;
+      width: auto;
+    }
+  }
+
+  .directions__info-wrapper {
+    flex-basis: 205px;
+    padding: 19px 19px 16px;
+
+    &--main {
+      flex-basis: 82%;
+      padding: 17px 21px 16px;
+    }
+  }
+
+  .directions__days {
+    &:last-of-type {
+      margin-bottom: 6px;
+    }
+  }
+
+  .directions__link {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+    &--main {
+      position: relative;
+      right: auto;
+      bottom: auto;
+    }
+  }
+
+  .directions__link-more {
+    display: block;
+    flex-basis: 100%;
+    padding: 9px;
+
+    text-align: center;
+    color: $main-text;
+
+    background-color: $white;
+    box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
+  }
 }

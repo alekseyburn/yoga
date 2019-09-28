@@ -31,3 +31,25 @@
 .page-footer__link {
   color: rgba($white, 0.5);
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    padding: 75px 77px 19px;
+  }
+
+  .page-footer__contacts-list {
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    padding-right: 77px;
+    padding-bottom: 75px;
+    padding-left: 77px;
+  }
+
+  .page-footer__rights {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}

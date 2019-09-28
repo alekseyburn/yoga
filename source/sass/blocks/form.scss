@@ -20,3 +20,13 @@
   background-color: $second-text;
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .form__label {
+    margin-bottom: 46px;
+
+    &:last-of-type {
+      margin-bottom: 57px;
+    }
+  }
+}

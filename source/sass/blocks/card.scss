@@ -1,7 +1,11 @@
 .card {
-  display: flex;
+  display: none;
 
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
+
+  &--hatha {
+    display: flex;
+  }
 }
 
 .card__avatar {
@@ -36,4 +40,80 @@
 
 .card__direction {
   margin: 0;
+}
+
+.card__watch-link {
+  display: none;
+}
+
+.card__links-list {
+  @include reset-list;
+
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .card {
+    position: relative;
+
+    display: flex;
+
+    box-shadow: none;
+  }
+
+  .card__avatar {
+    position: absolute;
+    bottom: 10px;
+
+    width: 91px;
+    height: 92px;
+  }
+
+  .card__wrapper {
+    flex-basis: 100%;
+    min-height: 67px;
+    margin-left: 15px;
+    padding: 11px 12px 6px 83px;
+
+    box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
+  }
+
+  .card__sub-wrapper {
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .card__links-list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card__link {
+    display: block;
+  }
+
+  .card__svg {
+    &--vk {
+      width: 8.3px;
+      height: 5.11px;
+    }
+
+    &--twitter {
+      width: 9.63px;
+      height: 6.64px;
+    }
+  }
+
+  .card__watch-link {
+    display: block;
+    margin-bottom: 5px;
+
+    color: $main-text;
+
+    border-bottom: 1px solid $main-text;
+  }
 }

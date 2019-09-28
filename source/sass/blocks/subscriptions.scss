@@ -12,6 +12,10 @@
   margin: 0 0 34px;
 }
 
+.subscriptions__form {
+  margin-bottom: 30px;
+}
+
 .subscriptions__list {
   @include reset-list;
 }
@@ -59,4 +63,70 @@
   color: $white;
 
   background-color: $main-text;
+}
+
+@media (min-width: $tablet-width) {
+  .subscriptions {
+    padding: 0 $tablet-indent - 11px 128px $tablet-indent;
+
+    background-image: url("../img/bg-subs-patterns-tablet@1x.png"),
+    url("../img/bg-subs-clouds-tablet@1x.png");
+    background-position: 94% 124%, center -20px;
+    background-size: auto, 100%;
+  }
+
+  .subscriptions__title {
+    margin-bottom: 20px;
+  }
+
+  .subscriptions__form {
+    margin-bottom: 41px;
+  }
+
+  .subscriptions__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .subscriptions__item {
+    flex-basis: 28.2%;
+    margin-bottom: 0;
+    padding: 38px 36px 29px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--main {
+      flex-basis: 35.6%;
+      padding-bottom: 38px;
+    }
+  }
+
+  .subscriptions__name {
+    margin-bottom: 7px;
+
+    font-size: 18px;
+  }
+
+  .subscriptions__time {
+    margin-bottom: 13px;
+  }
+
+  .subscriptions__price {
+    font-size: 21px;
+
+    &:not(.subscriptions__price--main) {
+      margin-bottom: 0;
+    }
+  }
+
+  .subscriptions__link {
+    display: none;
+
+    &--main {
+      display: block;
+    }
+  }
 }
