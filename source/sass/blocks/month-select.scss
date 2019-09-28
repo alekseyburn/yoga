@@ -1,7 +1,6 @@
 .month-select {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
 
 .month-select__radio {
@@ -10,5 +9,14 @@
 
   &--active {
     border-bottom: 1px solid $second-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .month-select {
+    justify-content: space-between;
+    width: 38%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

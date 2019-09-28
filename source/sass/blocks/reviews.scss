@@ -8,9 +8,11 @@
 .reviews__list {
   margin-bottom: 18px;
 }
+
 .reviews__item {
   position: relative;
 
+  display: none;
   margin: 0;
   padding: 60px 15px 30px;
 
@@ -27,6 +29,10 @@
     height: 23px;
 
     background-image: url("../img/icon-quotes.svg");
+  }
+
+  &:first-child {
+    display: block;
   }
 }
 
@@ -93,4 +99,41 @@
 
 .reviews__end {
   font-size: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 0 158px 138px 168px;
+  }
+
+  .reviews__title {
+    margin-bottom: 39px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    padding: 72px 55px 30px 87px;
+
+    &::before {
+      top: 33px;
+      left: 90px;
+    }
+
+    &:last-child {
+      margin-bottom: 28px;
+    }
+  }
+
+  .reviews__text {
+    margin-bottom: 20px;
+
+    font-size: 12px;
+    line-height: 20px;
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
 }

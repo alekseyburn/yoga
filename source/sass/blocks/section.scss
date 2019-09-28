@@ -3,3 +3,9 @@
   font-size: 18px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .section__title {
+    font-size: 21px;
+  }
+}

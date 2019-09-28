@@ -15,6 +15,8 @@
   margin-left: -20px;
   padding: 0;
 
+  font-size: 0;
+
   background-color: transparent;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
@@ -23,6 +25,32 @@
 
 .page-header__phone {
   margin-right: -20px;
+
   font-size: 12px;
   color: $main-text;
 };
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 35px $tablet-indent - 12px 82px $tablet-indent - 2px;
+
+    background-image: url("../img/bg-clouds-tablet@1x.png");
+  }
+
+  .page-header__toggle {
+    align-self: flex-start;
+    margin-left: 0;
+    padding-left: 19px;
+
+    font: inherit;
+    font-size: 12px;
+    color: $main-text;
+
+    background-position: left center;
+    background-size: 13px 8px;
+  }
+
+  .page-header__phone {
+    margin-right: 0;
+  }
+}

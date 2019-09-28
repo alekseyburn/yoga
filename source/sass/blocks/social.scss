@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+
+  &--header {
+    display: none;
+  }
 }
 
 .social__item {
@@ -20,4 +24,50 @@
 .social__svg path {
   fill: $white;
   fill-opacity: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    &--header {
+      display: flex;
+    }
+  }
+
+
+  .social__item {
+    &--header {
+      margin-right: 6px;
+
+      & .social__svg path {
+        fill: $main-text;
+      }
+    }
+
+    &--footer {
+      margin-right: 12px;
+
+      & .social__link {
+        &--vk {
+          & .social__svg {
+            width: 13px;
+            height: 8px;
+          }
+        }
+
+        &--twitter {
+          & .social__svg {
+            width: 15px;
+            height: 10.4px;
+          }
+        }
+
+        &--facebook {
+          & .social__svg {
+            width: 5px;
+            height: 11px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -71,3 +71,43 @@
     background-size: cover;
   }
 }
+
+.first-page__city {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .first-page {
+    margin-top: 55px;
+  }
+
+  .first-page__slogan {
+    margin-bottom: 10px;
+    margin-left: -140px;
+    padding-top: 23px;
+
+    background-image: url("../img/img-slogan-tablet@1x.png");
+  }
+
+  .first-page__title {
+    margin-right: -0.35em;
+    margin-bottom: 3px;
+
+    font-size: 144px;
+    line-height: 90%;
+    letter-spacing: 0.35em;
+  }
+
+  .first-page__link {
+    margin-bottom: 58px;
+    margin-left: 9px;
+  }
+
+  .first-page__city {
+    display: block;
+    margin-bottom: -5px;
+
+    font-size: 12px;
+    text-align: right;
+  }
+}

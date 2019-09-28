@@ -13,3 +13,18 @@
   font-size: 20px;
   line-height: 27px;
 }
+
+@media (min-width: $tablet-width) {
+  .record {
+    padding: 69px 174px 69px 182px;
+
+    background-image: url("../img/bg-footer-clouds-tablet@1x.jpg");
+  }
+
+  .record__title {
+    margin-bottom: 41px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
