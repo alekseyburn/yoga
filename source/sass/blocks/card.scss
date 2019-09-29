@@ -117,3 +117,50 @@
     border-bottom: 1px solid $main-text;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .card__avatar {
+    width: 143px;
+    height: 144px;
+    bottom: 17px;
+  }
+  .card__wrapper {
+    margin-left: 23px;
+    padding: 19px 24px 19px 142px;
+    min-height: 105px;
+  }
+  .card__info {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .card__direction {
+    font-size: 12px;
+  }
+
+  .card__links-list {
+    justify-content: flex-end;
+    margin-top: 5px;
+  }
+
+  .card__links-item {
+    margin-left: 12px;
+  }
+  .card__svg {
+    &--vk {
+      width: 13px;
+      height: 8px;
+    }
+
+    &--twitter {
+      width: 15px;
+      height: 10.5px;
+    }
+  }
+
+  .card__watch-link {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}

@@ -66,3 +66,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+
+    &--card {
+      width: 45px;
+      height: 30px;
+    }
+
+    &__slider {
+      background-size: 8px 13px;
+      width: 45px;
+      height: 30px;
+    }
+
+    &--reviews {
+      background-size: 8px 13px;
+      width: 45px;
+      height: 30px;
+    }
+  }
+}

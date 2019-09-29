@@ -28,3 +28,10 @@
     line-height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .record {
+    padding: 0 10px 0 67px;
+    background-image: none;
+  }
+}

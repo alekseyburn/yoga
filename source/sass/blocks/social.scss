@@ -33,7 +33,6 @@
     }
   }
 
-
   .social__item {
     &--header {
       margin-right: 6px;
@@ -70,4 +69,54 @@
       }
     }
   }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+
+    &--header {
+      margin-top: -14px;
+    }
+  }
+
+.social__item {
+  &--header {
+    margin-right: 12px;
+
+
+  }
+
+  & .social__link {
+    &--vk {
+      & .social__svg {
+        width: 13px;
+        height: 8px;
+
+        & path {
+          fill: $main-text;
+        }
+      }
+    }
+
+    &--twitter {
+      & .social__svg {
+        width: 15px;
+        height: 10.4px;
+        & path {
+          fill: $main-text;
+        }
+      }
+    }
+
+    &--facebook {
+      & .social__svg {
+        width: 5px;
+        height: 11px;
+        & path {
+          fill: $main-text;
+        }
+      }
+    }
+  }
+}
 }

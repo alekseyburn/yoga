@@ -130,3 +130,59 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .subscriptions {
+    padding: 0 $desktop-indent - 20px 145px $desktop-indent - 21px;
+    background-image: url("../img/bg-subs-clouds-desktop@1x.png");
+    background-position: center -57px;
+    background-size: cover;
+  }
+
+  .subscriptions__title {
+    margin-bottom: 57px;
+  }
+
+  .subscriptions__form {
+    margin-bottom: 51px;
+  }
+
+  .subscriptions__list {
+    max-width: 931px;
+    margin: 0 auto;
+  }
+
+  .subscriptions__item {
+    padding: 57px 55px 55px;
+
+    &--main {
+
+    }
+  }
+
+  .subscriptions__name {
+    margin-bottom: 18px;
+  }
+
+  .subscriptions__time {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .subscriptions__price {
+    font-size: 30px;
+
+    &--main {
+      margin-bottom: 40px;
+    }
+  }
+
+  .subscriptions__link {
+    font-size: 12px;
+
+    &--main {
+      padding: 18px 23px 21px;
+    }
+  }
+}

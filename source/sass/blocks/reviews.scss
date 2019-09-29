@@ -137,3 +137,53 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url("../img/bg-team-patterns-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 113%;
+    position: relative;
+    padding: 0 $desktop-indent - 8px 129px $desktop-indent - 8px;
+  }
+
+  .reviews__title {
+    margin-bottom: 63px;
+  }
+
+  .reviews__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews__item {
+    flex-basis: 442px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .reviews__slider-wrapper {
+    width: 905px;
+    position: absolute;
+    top: 43%;
+
+    & .button--left {
+      position: absolute;
+      left: -14px;
+    }
+
+    & .button--right {
+      position: absolute;
+      right: -24px;
+    }
+  }
+
+  .reviews__counter {
+    display: none;
+  }
+}

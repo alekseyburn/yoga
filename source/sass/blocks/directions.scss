@@ -157,3 +157,72 @@
     box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .directions {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 $desktop-indent 123px $desktop-indent - 35px;
+    background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
+    background-position: 58% -61px;
+  }
+  .directions__title {
+    margin-left: 30px;
+    margin-bottom: 66px;
+  }
+
+  .directions__item {
+    margin-bottom: 30px;
+    &--main {
+      flex-basis: 39.5%;
+    }
+
+    &:nth-last-child(2):not(.directions__item--main) {
+      margin-bottom: 55px;
+    }
+  }
+
+  .directions__img {
+    flex-basis: 41.9%;
+  }
+
+  .directions__info-wrapper {
+    flex-basis: 305px;
+    padding: 33px 32px 32px;
+
+    &--main {
+      padding: 42px 46px 25px;
+      flex-basis: 82%;
+    }
+  }
+  .directions__name {
+    font-size: 16px;
+    margin-bottom: 13px;
+  }
+  .directions__days {
+    font-size: 12px;
+    line-height: 20px;
+
+    &:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
+  .directions__instructor {
+    font-size: 12px;
+  }
+
+  .directions__link {
+    right: 36px;
+    bottom: 37px;
+
+    &--main {
+      right: auto;
+      bottom: auto;
+    }
+  }
+
+  .directions__link-more {
+    font-size: 12px;
+    padding: 16px;
+  }
+}

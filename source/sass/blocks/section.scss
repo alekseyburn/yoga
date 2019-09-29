@@ -9,3 +9,14 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section__width-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .section__title {
+    font-size: 30px;
+  }
+}
