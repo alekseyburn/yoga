@@ -39,3 +39,9 @@ body {
     background-image: url("../img/bg-clouds-tablet@1x.png");
   }
 }
+
+@media (min-width: $desktop-width) {
+  body {
+    background-image: url("../img/bg-clouds-desktop@1x.png");
+  }
+}

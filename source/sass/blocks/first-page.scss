@@ -111,3 +111,49 @@
     text-align: right;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .first-page {
+    margin-top: 102px;
+  }
+
+  .first-page__slogan {
+    margin-left: -253px;
+    margin-bottom: 49px;
+    padding-top: 42px;
+    background-image: url("../img/img-slogan-desktop@1x.png");
+  }
+
+  .first-page__title {
+    font-size: 265px;
+    line-height: 80%;
+    margin-bottom: 10px;
+  }
+
+  .first-page__link {
+    font-size: 14px;
+    width: 260px;
+    margin-left: 0;
+    margin-right: 36px;
+    line-height: 150%;
+    padding-left: 68px;
+    margin-bottom: 132px;
+
+    &::before {
+      top: -5px;
+      width: 56px;
+      height: 48px;
+    }
+
+    &::after {
+      top: 10px;
+      left: 25px;
+      width: 9px;
+      height: 17px;
+    }
+  }
+
+  .first-page__city {
+    font-size: 16px;
+  }
+}

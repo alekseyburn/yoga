@@ -50,9 +50,11 @@
   .team {
     padding: 0 $tablet-indent - 11px 137px $tablet-indent;
 
-    background-image: url("../img/bg-team-patterns-tablet@1x.png");
+    background-image: url("../img/bg-subs-clouds-desktop@1x.png"),
+    url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 19%;
+    background-position: center -446px, 0 19%;
+    background-size: cover, contain;
   }
 
   .team__title {
@@ -119,5 +121,68 @@
 
   .team__counter--end {
     font-size: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .team {
+    background-image: url("../img/bg-subs-clouds-desktop@1x.png"),
+    url("../img/bg-subs-patterns-desktop@1x.png"),
+    url("../img/bg-team-patterns-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center -665px, 94% 5%, 0 7%;
+    background-size: cover, contain, contain;
+    padding: 0 $desktop-indent - 43px 140px $desktop-indent - 43px;
+  }
+
+  .team__title {
+    margin-right: 45px;
+    margin-bottom: 121px;
+  }
+
+  .team__list {
+    margin-bottom: 44px;
+  }
+
+  .team__column-left {
+    flex-basis: 422px;
+  }
+
+  .team__cards-item {
+    margin-bottom: 89px;
+  }
+
+  .team__column-right {
+    flex-basis: 487px;
+    flex-grow: 0;
+  }
+  .team__instructor-name {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .team__skill {
+    font-size: 14px;
+    margin-bottom: 27px;
+  }
+
+  .team__description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .team__buttons-wrapper {
+    margin-left: 267px;
+  }
+
+  .team__counter {
+    display: block;
+    margin: 0 15px 0 20px;
+
+    font-size: 16px;
+  }
+
+  .team__counter--end {
+    font-size: 12px;
   }
 }
