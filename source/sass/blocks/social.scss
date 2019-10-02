@@ -12,7 +12,13 @@
 }
 
 .social__item {
-  margin-right: 25px;
+  &--footer {
+    margin-right: 25px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -21,9 +27,10 @@
   line-height: 0;
 }
 
-.social__svg path {
+.social__svg {
   fill: $white;
-  fill-opacity: 1;
+
+
 }
 
 @media (min-width: $tablet-width) {
@@ -36,10 +43,6 @@
   .social__item {
     &--header {
       margin-right: 6px;
-
-      & .social__svg path {
-        fill: $main-text;
-      }
     }
 
     &--footer {
@@ -69,11 +72,16 @@
       }
     }
   }
+
+  .social__svg {
+    &--header {
+      fill: rgba($main-text, 0.65);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .social {
-
     &--header {
       margin-top: -14px;
     }
@@ -83,38 +91,20 @@
   &--header {
     margin-right: 12px;
 
-
-  }
-
-  & .social__link {
-    &--vk {
-      & .social__svg {
+    & .social__svg {
+      &--vk {
         width: 13px;
         height: 8px;
-
-        & path {
-          fill: $main-text;
-        }
       }
-    }
 
-    &--twitter {
-      & .social__svg {
+      &--twitter {
         width: 15px;
         height: 10.4px;
-        & path {
-          fill: $main-text;
-        }
       }
-    }
 
-    &--facebook {
-      & .social__svg {
+      &--facebook {
         width: 5px;
         height: 11px;
-        & path {
-          fill: $main-text;
-        }
       }
     }
   }
