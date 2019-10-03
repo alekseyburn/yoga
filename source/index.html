@@ -23,21 +23,24 @@
       <span class="first-page__city">Санкт-Петербург</span>
       <ul class="first-page__contacts-list social social--header">
         <li class="social__item social__item--header">
-          <a class="social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener" aria-label="Вконтакте">
+          <a class="social__link social__link--vk" href="#" target="_blank" rel="noreferrer noopener"
+             aria-label="Вконтакте">
             <svg class="social__svg social__svg--header social__svg--vk" width="7" height="4">
               <use xlink:href="../img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--header">
-          <a class="social__link social__link--twitter" href="#" target="_blank" rel="noreferrer noopener" aria-label="Твиттер">
+          <a class="social__link social__link--twitter" href="#" target="_blank" rel="noreferrer noopener"
+             aria-label="Твиттер">
             <svg class="social__svg social__svg--header social__svg--twitter" width="8" height="6">
               <use xlink:href="../img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--header">
-          <a class="social__link social__link--facebook" href="#" target="_blank" rel="noreferrer noopener" aria-label="Фейсбук">
+          <a class="social__link social__link--facebook" href="#" target="_blank" rel="noreferrer noopener"
+             aria-label="Фейсбук">
             <svg class="social__svg social__svg--header social__svg--facebook" width="3" height="6">
               <use xlink:href="../img/sprite.svg#icon-fb"></use>
             </svg>
@@ -49,46 +52,86 @@
   <main>
     <section class="directions section">
       <h2 class="directions__title section__title">Направления</h2>
-      <div class="directions__wrapper">
-        <div class="directions__item directions__item--main">
-          <img class="directions__img directions__img--main" src="img/img-hatha-yoga-desktop@1x.jpg" alt="Хатха-йога">
-          <div class="directions__info-wrapper directions__info-wrapper--main">
-            <h3 class="directions__name">Хатха-йога</h3>
+      <div class="directions__item directions__item--main">
+        <picture class="directions__picture">
+          <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="../img/img-hatha-yoga-desktop@1x.webp 1x, ../img/img-hatha-yoga-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="../img/img-hatha-yoga-tablet@1x.webp 1x, ../img/img-hatha-yoga-tablet@2x.webp 2x">
+          <source type="image/webp"
+                  srcset="../img/img-hatha-yoga-mobile@1x.webp 1x, ../img/img-hatha-yoga-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1150px)"
+                  srcset="../img/img-hatha-yoga-desktop@1x.jpg 1x, ../img/img-hatha-yoga-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+                  srcset="../img/img-hatha-yoga-tablet@1x.jpg 1x, ../img/img-hatha-yoga-tablet@2x.jpg 2x">
+          <img class="directions__img directions__img--main" src="../img/img-hatha-yoga-mobile@1x.jpg"
+               srcset="../img/img-hatha-yoga-mobile@2x.jpg 2x" alt="Хатха-йога">
+        </picture>
+        <div class="directions__info-wrapper directions__info-wrapper--main">
+          <h3 class="directions__name">Хатха-йога</h3>
+          <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
+          <p class="directions__days">Вт, Чт – с 18:00 до 21:00</p>
+          <a class="directions__instructor" href="#">Инструктор<br>Емельянова Полина</a>
+        </div>
+        <a class="directions__link directions__link--main button button--right" href="#"
+           aria-label="Записаться на занятие"></a>
+      </div>
+      <ul class="directions__list">
+        <li class="directions__item">
+          <picture class="directions__picture">
+            <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="../img/img-ashatanga-yoga-desktop@1x.webp 1x, ../img/img-ashatanga-yoga-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../img/img-ashatanga-yoga-tablet@1x.webp 1x, ../img/img-ashatanga-yoga-tablet@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="../img/img-ashatanga-yoga-mobile@1x.webp 1x, ../img/img-ashatanga-yoga-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)"
+                    srcset="../img/img-ashatanga-yoga-desktop@1x.jpg 1x, ../img/img-ashatanga-yoga-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="../img/img-ashatanga-yoga-tablet@1x.jpg 1x, ../img/img-ashatanga-yoga-tablet@2x.jpg 2x">
+            <img class="directions__img" src="../img/img-ashatanga-yoga-mobile@1x.jpg"
+                 srcset="../img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога">
+          </picture>
+          <div class="directions__info-wrapper">
+            <h3 class="directions__name">Ашатанга-йога</h3>
+            <p class="directions__days">Пн, Ср, Пт – с 11:00 до 14:00</p>
+            <p class="directions__days">Вт, Чт – с 19:00 до 21:00</p>
+            <a class="directions__instructor" href="#">Инструктор<br>Емельянова Полина</a>
+          </div>
+          <a class="directions__link button button--right button--card" href="#"
+             aria-label="Записаться на занятие"></a>
+        </li>
+        <li class="directions__item">
+          <picture class="directions__picture">
+            <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="../img/img-cundalini-yoga-desktop@1x.webp 1x, ../img/img-cundalini-yoga-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../img/img-cundalini-yoga-tablet@1x.webp 1x, ../img/img-cundalini-yoga-tablet@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="../img/img-cundalini-yoga-mobile@1x.webp 1x, ../img/img-cundalini-yoga-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)"
+                    srcset="../img/img-cundalini-yoga-desktop@1x.jpg 1x, ../img/img-cundalini-yoga-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="../img/img-cundalini-yoga-tablet@1x.jpg 1x, ../img/img-cundalini-yoga-tablet@2x.jpg 2x">
+            <img class="directions__img" src="../img/img-cundalini-yoga-mobile@1x.jpg"
+                 srcset="../img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога">
+          </picture>
+          <div class="directions__info-wrapper">
+            <h3 class="directions__name">Кундалини-йога</h3>
             <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
             <p class="directions__days">Вт, Чт – с 18:00 до 21:00</p>
             <a class="directions__instructor" href="#">Инструктор<br>Емельянова Полина</a>
           </div>
-          <a class="directions__link directions__link--main button button--right" href="#"
+          <a class="directions__link button button--right button--card" href="#"
              aria-label="Записаться на занятие"></a>
-        </div>
-        <ul class="directions__list">
-          <li class="directions__item">
-            <img class="directions__img" src="img/img-ashatanga-yoga-mobile@1x.jpg" alt="Ашатанга-йога">
-            <div class="directions__info-wrapper">
-              <h3 class="directions__name">Ашатанга-йога</h3>
-              <p class="directions__days">Пн, Ср, Пт – с 11:00 до 14:00</p>
-              <p class="directions__days">Вт, Чт – с 19:00 до 21:00</p>
-              <a class="directions__instructor" href="#">Инструктор<br>Емельянова Полина</a>
-            </div>
-            <a class="directions__link button button--right button--card" href="#"
-               aria-label="Записаться на занятие"></a>
-          </li>
-          <li class="directions__item">
-            <img class="directions__img" src="img/img-cundalini-yoga-mobile@1x.jpg" alt="Кундалини-йога">
-            <div class="directions__info-wrapper">
-              <h3 class="directions__name">Кундалини-йога</h3>
-              <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
-              <p class="directions__days">Вт, Чт – с 18:00 до 21:00</p>
-              <a class="directions__instructor" href="#">Инструктор<br>Емельянова Полина</a>
-            </div>
-            <a class="directions__link button button--right button--card" href="#"
-               aria-label="Записаться на занятие"></a>
-          </li>
-          <li class="directions__item">
-            <a class="directions__link-more" href="#">Смотреть больше</a>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="directions__item">
+          <a class="directions__link-more" href="#">Смотреть больше</a>
+        </li>
+      </ul>
     </section>
     <section class="subscriptions section">
       <h2 class="subscriptions__title section__title">Абонементы</h2>
@@ -260,7 +303,8 @@
         <button class="team__button button button--left button__slider button__slider--left button--disabled"
                 type="button"
                 aria-label="Предыдущий Инструктор"></button>
-        <p class="team__counter"><span class="team__counter--start">1</span> / <span class="team__counter--end">9</span></p>
+        <p class="team__counter"><span class="team__counter--start">1</span> / <span class="team__counter--end">9</span>
+        </p>
         <button class="team__button button button--right button__slider button__slider--right" type="button"
                 aria-label="Следующий Инструктор"></button>
       </div>

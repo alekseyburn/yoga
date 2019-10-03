@@ -1,13 +1,18 @@
 .directions {
   padding: 0 $mobile-indent 37px;
+  display: flex;
+  flex-direction: column;
 
   background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 145px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-yoga-patterns-mobile@2x.png");
+  }
 }
 
 .directions__title {
-  display: block;
   margin: 0 0 38px;
 }
 
@@ -23,9 +28,21 @@
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 }
 
+.directions__picture {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 80%;
+}
+
 .directions__img {
-  display: block;
   flex-basis: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  transform: translate(-50%,-50%);
 }
 
 .directions__info-wrapper {
