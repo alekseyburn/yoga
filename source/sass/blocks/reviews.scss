@@ -1,12 +1,13 @@
 .reviews {
   padding: 0 $mobile-indent 58px;
 }
+
 .reviews__title {
   margin: 0 0 38px;
 }
 
 .reviews__list {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .reviews__item {
@@ -48,10 +49,26 @@
   display: flex;
 }
 
-.reviews__avatar {
-  display: block;
-  flex-basis: 10%;
+.reviews__picture {
+  position: relative;
+
+  flex-basis: 23.8%;
+  height: 0;
   margin-right: 13px;
+  padding-bottom: 23.3%;
+  overflow: hidden;
+}
+
+.reviews__avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  flex-basis: 100%;
+  width: auto;
+  height: 101%;
+
+  transform: translate(-50%,-50%);
 }
 
 .reviews__card-wrapper {
@@ -61,7 +78,7 @@
 }
 
 .reviews__author {
-  font-size: 12px;
+  font-size: $font-size-m;
   line-height: 20px;
   color: $second-text;
   font-style: normal;
@@ -71,11 +88,6 @@
   margin-bottom: 9px;
 
   color: rgba($main-text, 0.7);
-}
-
-.reviews__social-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .reviews__link {
@@ -94,7 +106,7 @@
 }
 
 .reviews__counter {
-  font-size: 12px;
+  font-size: $font-size-m;
 }
 
 .reviews__end {
@@ -110,6 +122,10 @@
     margin-bottom: 39px;
   }
 
+  .reviews__list {
+    margin-bottom: 29px;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column;
@@ -122,31 +138,34 @@
     }
 
     &:last-child {
-      margin-bottom: 28px;
+      margin-bottom: 0;
     }
   }
 
   .reviews__text {
     margin-bottom: 20px;
 
-    font-size: 12px;
+    font-size: $font-size-m;
     line-height: 20px;
 
     &:last-of-type {
       margin-bottom: 22px;
     }
   }
+
+  .reviews__picture {
+    flex-basis: 17.4%;
+    padding-bottom: 17%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    max-width: 1440px;
-    margin: 0 auto;
-    //background-image: url("../img/bg-team-patterns-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 113%;
     position: relative;
-    padding: 0 $desktop-indent - 8px 129px $desktop-indent - 8px;
+
+    width: 905px;
+    margin: 0 auto;
+    padding: 0 0 147px;
   }
 
   .reviews__title {
@@ -156,6 +175,8 @@
   .reviews__list {
     display: flex;
     justify-content: space-between;
+    width: 905px;
+    margin: 0 auto;
   }
 
   .reviews__item {
@@ -168,19 +189,10 @@
   }
 
   .reviews__slider-wrapper {
-    width: 905px;
     position: absolute;
-    top: 43%;
+    top: 43.5%;
 
-    & .button--left {
-      position: absolute;
-      left: -14px;
-    }
-
-    & .button--right {
-      position: absolute;
-      right: -24px;
-    }
+    width: 100%;
   }
 
   .reviews__counter {

@@ -18,6 +18,14 @@
 }
 
 .social__item {
+  &--reviews {
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   &--footer {
     margin-right: 25px;
   }
@@ -43,6 +51,10 @@
   &--card {
     fill: $main-text;
   }
+
+  &--reviews {
+    fill: $main-text;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,6 +73,14 @@
   .social__item {
     &--header {
       margin-right: 5px;
+    }
+
+    &--reviews {
+      margin-right: 11px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &--footer {
@@ -96,6 +116,17 @@
       fill: rgba($main-text, 0.65);
     }
 
+    &--reviews {
+      &.social__svg--vk {
+        width: 13px;
+        height: 8px;
+      }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+    }
     &--vk {
       width: 8.3px;
       height: 5.11px;

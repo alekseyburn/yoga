@@ -9,6 +9,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-team-patterns-mobile@2x.png");
+    background-size: contain;
+    background-position: left -19px;
   }
 }
 
@@ -52,7 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .team {
-    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 109px $tablet-indent;
 
     background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;

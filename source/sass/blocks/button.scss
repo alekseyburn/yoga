@@ -54,6 +54,7 @@
     &--team {
       position: static;
       top: auto;
+
       width: 29px;
       height: 19px;
 
@@ -69,22 +70,33 @@
 
 @media (min-width: $desktop-width) {
   .button {
-
     &--card {
       width: 45px;
       height: 30px;
     }
 
     &--team {
-      background-size: 11px 17px;
       width: 45px;
       height: 30px;
+
+      background-size: 11px 17px;
     }
 
     &--reviews {
-      background-size: 8px 13px;
+      position: absolute;
+
       width: 45px;
       height: 30px;
+
+      background-size: 8px 13px;
+
+      &-left {
+        left: -16px;
+      }
+
+      &-right {
+        right: -22px;
+      }
     }
   }
 }
