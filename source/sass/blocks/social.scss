@@ -9,6 +9,12 @@
   &--header {
     display: none;
   }
+
+  &--card {
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .social__item {
@@ -25,12 +31,18 @@
   display: block;
 
   line-height: 0;
+
+  &--card {
+    line-height: 120%;
+  }
 }
 
 .social__svg {
   fill: $white;
 
-
+  &--card {
+    fill: $main-text;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,11 +50,17 @@
     &--header {
       display: flex;
     }
+
+    &--card {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
   }
 
   .social__item {
     &--header {
-      margin-right: 6px;
+      margin-right: 5px;
     }
 
     &--footer {
@@ -77,6 +95,16 @@
     &--header {
       fill: rgba($main-text, 0.65);
     }
+
+    &--vk {
+      width: 8.3px;
+      height: 5.11px;
+    }
+
+    &--twitter {
+      width: 9.63px;
+      height: 6.64px;
+    }
   }
 }
 
@@ -85,28 +113,53 @@
     &--header {
       margin-top: -14px;
     }
+
+    &--card {
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
   }
 
-.social__item {
-  &--header {
-    margin-right: 12px;
+  .social__item {
+    &--header {
+      margin-right: 12px;
 
-    & .social__svg {
-      &--vk {
-        width: 13px;
-        height: 8px;
+      & .social__svg {
+        &--vk {
+          width: 13px;
+          height: 8px;
+        }
+
+        &--twitter {
+          width: 15px;
+          height: 10.4px;
+        }
+
+        &--facebook {
+          width: 5px;
+          height: 11px;
+        }
       }
+    }
 
-      &--twitter {
-        width: 15px;
-        height: 10.4px;
-      }
+    &--card {
+      margin-left: 12px;
 
-      &--facebook {
-        width: 5px;
-        height: 11px;
+      &:first-child {
+        margin-left: 0;
       }
     }
   }
-}
+
+  .social__svg {
+    &--vk {
+      width: 13px;
+      height: 8px;
+    }
+
+    &--twitter {
+      width: 15px;
+      height: 10.5px;
+    }
+  }
 }

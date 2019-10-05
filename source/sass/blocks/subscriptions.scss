@@ -94,9 +94,7 @@
   .subscriptions {
     padding: 0 $tablet-indent - 11px 128px $tablet-indent;
 
-    background-image: url("../img/bg-subs-patterns-tablet@1x.png");
-    background-position: 94% 124%;
-    background-size: auto;
+    background-image: none;
 
     &::after {
       top: -295px;
