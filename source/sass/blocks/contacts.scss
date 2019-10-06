@@ -1,11 +1,7 @@
-.contacts {
-  background-color: $purple;
-}
-
 .contacts__item {
   margin-bottom: 17px;
 
-  font-size: 14px;
+  font-size: $font-size-m + 2px;
   line-height: 20px;
   color: $white;
 
@@ -15,14 +11,14 @@
 }
 
 .contacts__address {
-  font-size: 12px;
+  font-size: $font-size-m;
   font-style: normal;
 }
 
 .contacts__schedule {
   margin: 0;
 
-  font-size: 12px;
+  font-size: $font-size-m;
 }
 
 .contacts__phone {
@@ -34,7 +30,7 @@
 .contacts__mail {
   display: block;
 
-  font-size: 12px;
+  font-size: $font-size-m;
   color: $white;
 }
 

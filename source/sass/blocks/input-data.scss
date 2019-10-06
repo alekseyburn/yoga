@@ -1,5 +1,7 @@
 .input-data {
-  font-size: 14px;
+  display: block;
+
+  font-size: $font-size-m + 2px;
   line-height: 20px;
   color: $light-purple;
 }

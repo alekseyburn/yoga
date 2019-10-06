@@ -5,7 +5,13 @@
 
   background-image: url("../img/bg-team-patterns-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 -10%;
+  background-position: 0 -6%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-team-patterns-mobile@2x.png");
+    background-size: contain;
+    background-position: left -19px;
+  }
 }
 
 .team__title {
@@ -48,13 +54,16 @@
 
 @media (min-width: $tablet-width) {
   .team {
-    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 109px $tablet-indent;
 
-    background-image: url("../img/bg-subs-clouds-desktop@1x.png"),
-    url("../img/bg-team-patterns-tablet@1x.png");
+    background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: center -446px, 0 19%;
-    background-size: cover, contain;
+    background-position: 0 19%;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-team-patterns-tablet@2x.png");
+    }
   }
 
   .team__title {
@@ -64,6 +73,7 @@
   .team__list {
     margin-bottom: 28px;
   }
+
   .team__item {
     display: flex;
     justify-content: space-between;
@@ -71,12 +81,14 @@
   }
 
   .team__column-left {
-    flex-basis: 271px;
+    flex-basis: 270px;
     margin-right: 43px;
     margin-bottom: 0;
   }
 
-
+  .team__cards-list {
+    margin-bottom: 28px;
+  }
 
   .team__cards-item {
     margin-bottom: 57px;
@@ -84,6 +96,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .team__buttons-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 165px;
   }
 
   .team__column-right {
@@ -95,28 +113,24 @@
     display: block;
     margin: 0 0 6px;
 
-    font-size: 16px;
+    font-size: $font-size-l;
   }
 
   .team__skill {
-    font-size: 12px;
+    font-size: $font-size-m;
   }
 
   .team__description {
     margin-bottom: 15px;
   }
 
-  .team__buttons-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 165px;
-  }
+
 
   .team__counter {
     display: block;
     margin: 0 12px 0 10px;
 
-    font-size: 12px;
+    font-size: $font-size-m;
   }
 
   .team__counter--end {
@@ -126,13 +140,36 @@
 
 @media (min-width: $desktop-width) {
   .team {
-    background-image: url("../img/bg-subs-clouds-desktop@1x.png"),
-    url("../img/bg-subs-patterns-desktop@1x.png"),
-    url("../img/bg-team-patterns-desktop@1x.png");
+    padding: 0 $desktop-indent - 43px 96px $desktop-indent - 43px;
+
+    background-image: url("../img/bg-subs-patterns-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: center -665px, 94% 5%, 0 7%;
-    background-size: cover, contain, contain;
-    padding: 0 $desktop-indent - 43px 140px $desktop-indent - 43px;
+    background-position: 94% 5%;
+    background-size: 41%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-patterns-desktop@2x.png");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -33px;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 1326px;
+
+      background-image: url("../img/bg-team-patterns-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 1084px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-team-patterns-desktop@2x.png");
+      }
+    }
   }
 
   .team__title {
@@ -141,48 +178,56 @@
   }
 
   .team__list {
-    margin-bottom: 44px;
+    max-width: 976px;
+    margin: 0 auto 44px;
   }
 
   .team__column-left {
     flex-basis: 422px;
   }
 
+  .team__cards-list {
+    margin-bottom: 44px;
+  }
+
   .team__cards-item {
     margin-bottom: 89px;
   }
 
-  .team__column-right {
-    flex-basis: 487px;
-    flex-grow: 0;
-  }
-  .team__instructor-name {
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-
-  .team__skill {
-    font-size: 14px;
-    margin-bottom: 27px;
-  }
-
-  .team__description {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
   .team__buttons-wrapper {
-    margin-left: 267px;
+    justify-content: flex-end;
   }
 
   .team__counter {
     display: block;
     margin: 0 15px 0 20px;
 
-    font-size: 16px;
+    font-size: $font-size-l;
   }
 
   .team__counter--end {
-    font-size: 12px;
+    font-size: $font-size-m;
+  }
+
+  .team__column-right {
+    flex-grow: 0;
+    flex-basis: 487px;
+  }
+
+  .team__instructor-name {
+    margin-bottom: 16px;
+
+    font-size: $font-size-l + 2px;
+  }
+
+  .team__skill {
+    margin-bottom: 27px;
+
+    font-size: $font-size-m + 2px;
+  }
+
+  .team__description {
+    font-size: $font-size-m;
+    line-height: 20px;
   }
 }

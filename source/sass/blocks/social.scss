@@ -9,21 +9,48 @@
   &--header {
     display: none;
   }
+
+  &--card {
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .social__item {
-  margin-right: 25px;
+  &--reviews {
+    margin-right: 7px;
+  }
+
+  &--footer {
+    margin-right: 25px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
   display: block;
 
   line-height: 0;
+
+  &--card {
+    line-height: 120%;
+  }
 }
 
-.social__svg path {
+.social__svg {
   fill: $white;
-  fill-opacity: 1;
+
+  &--card {
+    fill: $main-text;
+  }
+
+  &--reviews {
+    fill: $main-text;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,92 +58,134 @@
     &--header {
       display: flex;
     }
+
+    &--card {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
   }
 
   .social__item {
     &--header {
-      margin-right: 6px;
+      margin-right: 5px;
+    }
 
-      & .social__svg path {
-        fill: $main-text;
-      }
+    &--reviews {
+      margin-right: 11px;
     }
 
     &--footer {
       margin-right: 12px;
+    }
 
-      & .social__link {
-        &--vk {
-          & .social__svg {
-            width: 13px;
-            height: 8px;
-          }
-        }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-        &--twitter {
-          & .social__svg {
-            width: 15px;
-            height: 10.4px;
-          }
-        }
+  .social__svg {
+    &--header {
+      fill: rgba($main-text, 0.65);
+    }
 
-        &--facebook {
-          & .social__svg {
-            width: 5px;
-            height: 11px;
-          }
-        }
+    &--reviews {
+      &.social__svg--vk {
+        width: 13px;
+        height: 8px;
       }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+    }
+
+    &--footer {
+      &.social__svg--vk {
+        width: 13px;
+        height: 8px;
+      }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+
+      &.social__svg--facebook {
+        width: 5px;
+        height: 11px;
+      }
+    }
+
+    &--vk {
+      width: 8.3px;
+      height: 5.11px;
+    }
+
+    &--twitter {
+      width: 9.63px;
+      height: 6.64px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .social {
-
     &--header {
       margin-top: -14px;
     }
+
+    &--card {
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
   }
 
-.social__item {
-  &--header {
-    margin-right: 12px;
+  .social__item {
+    &--header {
+      margin-right: 12px;
+    }
 
+    &--card {
+      margin-left: 12px;
 
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 
-  & .social__link {
-    &--vk {
-      & .social__svg {
+  .social__svg {
+    &--header {
+      &.social__svg--vk {
         width: 13px;
         height: 8px;
-
-        & path {
-          fill: $main-text;
-        }
       }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+
+      &.social__svg--facebook {
+        width: 5px;
+        height: 11px;
+      }
+    }
+
+    &--footer {
+      fill: $purple;
+    }
+
+    &--vk {
+      width: 13px;
+      height: 8px;
     }
 
     &--twitter {
-      & .social__svg {
-        width: 15px;
-        height: 10.4px;
-        & path {
-          fill: $main-text;
-        }
-      }
-    }
-
-    &--facebook {
-      & .social__svg {
-        width: 5px;
-        height: 11px;
-        & path {
-          fill: $main-text;
-        }
-      }
+      width: 15px;
+      height: 10.5px;
     }
   }
-}
 }

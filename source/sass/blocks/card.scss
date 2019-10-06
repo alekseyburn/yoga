@@ -1,6 +1,7 @@
 .card {
   display: none;
 
+  background-color: $white;
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 
   &--hatha {
@@ -8,14 +9,32 @@
   }
 }
 
+.card__picture {
+  position: relative;
+
+  flex-basis: 82px;
+  height: 0;
+  padding-bottom: 82px;
+  overflow: hidden;
+
+  background-color: rgb(78, 78, 78);
+}
+
 .card__avatar {
-  display: block;
-  flex-basis: 20%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  flex-basis: 100%;
+  width: auto;
+  height: 101%;
+
+  transform: translate(-50%,-50%);
 }
 
 .card__wrapper {
   display: flex;
-  flex-basis: 80%;
+  flex-basis: 64%;
   justify-content: space-between;
   padding: 16px 20px 16px 15px;
 
@@ -46,30 +65,24 @@
   display: none;
 }
 
-.card__links-list {
-  @include reset-list;
-
-  display: flex;
-  flex-basis: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 @media (min-width: $tablet-width) {
   .card {
     position: relative;
 
     display: flex;
 
+    background-color: transparent;
     box-shadow: none;
   }
 
-  .card__avatar {
+  .card__picture {
     position: absolute;
-    bottom: 10px;
+    top: -36px;
+    left: 0;
 
+    flex-basis: auto;
     width: 91px;
-    height: 92px;
+    padding-bottom: 93px;
   }
 
   .card__wrapper {
@@ -87,27 +100,6 @@
     }
   }
 
-  .card__links-list {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .card__link {
-    display: block;
-  }
-
-  .card__svg {
-    &--vk {
-      width: 8.3px;
-      height: 5.11px;
-    }
-
-    &--twitter {
-      width: 9.63px;
-      height: 6.64px;
-    }
-  }
-
   .card__watch-link {
     display: block;
     margin-bottom: 5px;
@@ -119,48 +111,32 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card__picture {
+    top: -56px;
 
-  .card__avatar {
+    flex-basis: auto;
     width: 143px;
-    height: 144px;
-    bottom: 17px;
+    padding-bottom: 144px;
   }
+
   .card__wrapper {
-    margin-left: 23px;
-    padding: 19px 24px 19px 142px;
     min-height: 105px;
+    margin-left: 23px;
+    padding: 19px 26px 20px 141px;
   }
+
   .card__info {
-    font-size: 12px;
+    font-size: $font-size-m;
     line-height: 20px;
   }
 
   .card__direction {
-    font-size: 12px;
-  }
-
-  .card__links-list {
-    justify-content: flex-end;
-    margin-top: 5px;
-  }
-
-  .card__links-item {
-    margin-left: 12px;
-  }
-  .card__svg {
-    &--vk {
-      width: 13px;
-      height: 8px;
-    }
-
-    &--twitter {
-      width: 15px;
-      height: 10.5px;
-    }
+    font-size: $font-size-m;
   }
 
   .card__watch-link {
-    font-size: 12px;
     margin-bottom: 0;
+
+    font-size: 12px;
   }
 }

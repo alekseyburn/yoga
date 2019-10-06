@@ -25,7 +25,7 @@
     background-size: 6px 10px;
   }
 
-  &__slider {
+  &--team {
     position: absolute;
     top: 77px;
 
@@ -34,11 +34,11 @@
 
     background-size: 6px 10px;
 
-    &--left {
+    &-left {
       left: 15px;
     }
 
-    &--right {
+    &-right {
       right: 15px;
     }
   }
@@ -51,8 +51,9 @@
       height: 20px;
     }
 
-    &__slider {
+    &--team {
       position: static;
+      top: auto;
 
       width: 29px;
       height: 19px;
@@ -69,22 +70,33 @@
 
 @media (min-width: $desktop-width) {
   .button {
-
     &--card {
       width: 45px;
       height: 30px;
     }
 
-    &__slider {
-      background-size: 8px 13px;
+    &--team {
       width: 45px;
       height: 30px;
+
+      background-size: 11px 17px;
     }
 
     &--reviews {
-      background-size: 8px 13px;
+      position: absolute;
+
       width: 45px;
       height: 30px;
+
+      background-size: 8px 13px;
+
+      &-left {
+        left: -16px;
+      }
+
+      &-right {
+        right: -22px;
+      }
     }
   }
 }

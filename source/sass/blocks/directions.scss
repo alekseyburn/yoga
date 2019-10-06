@@ -1,13 +1,20 @@
 .directions {
-  padding: 0 $mobile-indent 37px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $mobile-indent 8px;
+  z-index: -1;
 
   background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 145px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-yoga-patterns-mobile@2x.png");
+    background-size: 216px 494px;
+  }
 }
 
 .directions__title {
-  display: block;
   margin: 0 0 38px;
 }
 
@@ -23,13 +30,30 @@
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 }
 
+.directions__picture {
+  position: relative;
+
+  width: 100%;
+  height: 0;
+  padding-bottom: 80%;
+  overflow: hidden;
+  background-color: rgb(78, 78, 78);
+}
+
 .directions__img {
-  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
   flex-basis: 100%;
+  width: auto;
+  height: 101%;
+
+  transform: translate(-50%,-50%);
 }
 
 .directions__info-wrapper {
-  flex-basis: 82%;
+  flex-basis: 83%;
   padding: 16px 20px 15px;
 
   background-color: $white;
@@ -39,7 +63,7 @@
   margin: 0 0 5px;
 
   font-weight: bold;
-  font-size: 12px;
+  font-size: $font-size-m;
 }
 
 .directions__days {
@@ -55,7 +79,7 @@
 }
 
 .directions__link {
-  flex-basis: 18%;
+  flex-basis: 17%;
 }
 
 .directions__link-more {
@@ -64,20 +88,23 @@
 
 @media (min-width: $tablet-width) {
   .directions {
-    padding: 0 $tablet-indent - 11px 119px $tablet-indent;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 $tablet-indent - 11px 118px $tablet-indent;
 
     background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
     background-position: left -20px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-tablet@2x.png");
+      background-size: 693px 397px;
+    }
   }
 
   .directions__title {
+    flex-basis: 100%;
     margin-bottom: 40px;
-  }
-
-  .directions__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
   }
 
   .directions__list {
@@ -87,7 +114,6 @@
   .directions__item {
     position: relative;
 
-    flex-basis: 100%;
     flex-wrap: nowrap;
     margin-bottom: 19px;
 
@@ -106,30 +132,44 @@
     }
   }
 
-  .directions__img {
-    flex-grow: 1;
-    flex-basis: auto;
-    width: 42.5%;
+  .directions__picture {
+    width: 42%;
+    height: auto;
+    padding-bottom: 34%;
 
     &--main {
-      flex-basis: 100%;
-      width: auto;
+      width: 100%;
+      padding-bottom: 84%;
+    }
+  }
+
+  .directions__img {
+
+    &--main {
+      top: 55%;
+      left: 52%;
+
+      height: 110%;
     }
   }
 
   .directions__info-wrapper {
-    flex-basis: 205px;
-    padding: 19px 19px 16px;
+    flex-basis: 58%;
+    padding: 19px 21px 16px;
 
     &--main {
-      flex-basis: 82%;
-      padding: 17px 21px 16px;
+      flex-basis: 83%;
     }
   }
 
+  .directions__name {
+    margin-bottom: 4px;
+  }
+
   .directions__days {
+
     &:last-of-type {
-      margin-bottom: 6px;
+      margin-bottom: 7px;
     }
   }
 
@@ -139,7 +179,7 @@
     bottom: 24px;
 
     &--main {
-      position: relative;
+      position: static;
       right: auto;
       bottom: auto;
     }
@@ -148,7 +188,7 @@
   .directions__link-more {
     display: block;
     flex-basis: 100%;
-    padding: 9px;
+    padding: 9px 9px 9px 0;
 
     text-align: center;
     color: $main-text;
@@ -163,52 +203,77 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 $desktop-indent 123px $desktop-indent - 35px;
+
     background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
     background-position: 58% -61px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-desktop@2x.png");
+      background-size: 1257px 722px;
+    }
   }
+
   .directions__title {
+    margin-bottom: 67px;
     margin-left: 30px;
-    margin-bottom: 66px;
   }
 
   .directions__item {
-    margin-bottom: 30px;
-    &--main {
-      flex-basis: 39.5%;
-    }
+    margin-bottom: 28px;
 
     &:nth-last-child(2):not(.directions__item--main) {
-      margin-bottom: 55px;
+      margin-bottom: 57px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .directions__picture {
+    &--main {
+      padding-bottom: 85%;
     }
   }
 
   .directions__img {
     flex-basis: 41.9%;
+
+    &--main {
+      top: 50%;
+      left: 50%;
+
+      height: 101%;
+    }
   }
 
   .directions__info-wrapper {
     flex-basis: 305px;
-    padding: 33px 32px 32px;
+    padding: 33px 35px 32px;
 
     &--main {
+      flex-basis: 83%;
       padding: 42px 46px 25px;
-      flex-basis: 82%;
     }
   }
+
   .directions__name {
-    font-size: 16px;
     margin-bottom: 13px;
+
+    font-size: $font-size-l;
   }
+
   .directions__days {
-    font-size: 12px;
+    font-size: $font-size-m;
     line-height: 20px;
 
     &:last-of-type {
       margin-bottom: 15px;
     }
   }
+
   .directions__instructor {
-    font-size: 12px;
+    font-size: $font-size-m;
   }
 
   .directions__link {
@@ -222,7 +287,8 @@
   }
 
   .directions__link-more {
-    font-size: 12px;
     padding: 16px;
+
+    font-size: $font-size-m;
   }
 }

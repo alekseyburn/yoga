@@ -32,16 +32,28 @@ body {
   background-image: url("../img/bg-clouds-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-clouds-mobile@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
   body {
     background-image: url("../img/bg-clouds-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-clouds-tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
     background-image: url("../img/bg-clouds-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-clouds-desktop@2x.png");
+    }
   }
 }
