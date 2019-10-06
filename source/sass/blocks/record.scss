@@ -1,24 +1,31 @@
 .record {
-  padding: 63px $mobile-indent 70px;
+  padding: 62px $mobile-indent 70px;
 
   background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-footer-clouds-mobile@2x.jpg");
+  }
 }
 
 .record__title {
-  margin: 0 0 25px;
+  margin: 0 0 26px;
 
-  font-weight: bold;
   font-size: 20px;
   line-height: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .record {
-    padding: 69px 174px 69px 182px;
+    padding: 69px 179px 69px 182px;
 
     background-image: url("../img/bg-footer-clouds-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-footer-clouds-tablet@2x.jpg");
+    }
   }
 
   .record__title {
@@ -31,7 +38,12 @@
 
 @media (min-width: $desktop-width) {
   .record {
-    padding: 0 10px 0 67px;
+    padding: 0;
+
     background-image: none;
+  }
+
+  .record__title {
+    margin-bottom: 40px;
   }
 }

@@ -20,10 +20,6 @@
 .social__item {
   &--reviews {
     margin-right: 7px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &--footer {
@@ -77,37 +73,14 @@
 
     &--reviews {
       margin-right: 11px;
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
 
     &--footer {
       margin-right: 12px;
+    }
 
-      & .social__link {
-        &--vk {
-          & .social__svg {
-            width: 13px;
-            height: 8px;
-          }
-        }
-
-        &--twitter {
-          & .social__svg {
-            width: 15px;
-            height: 10.4px;
-          }
-        }
-
-        &--facebook {
-          & .social__svg {
-            width: 5px;
-            height: 11px;
-          }
-        }
-      }
+    &:last-child {
+      margin-right: 0;
     }
   }
 
@@ -127,6 +100,24 @@
         height: 10.4px;
       }
     }
+
+    &--footer {
+      &.social__svg--vk {
+        width: 13px;
+        height: 8px;
+      }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+
+      &.social__svg--facebook {
+        width: 5px;
+        height: 11px;
+      }
+    }
+
     &--vk {
       width: 8.3px;
       height: 5.11px;
@@ -154,23 +145,6 @@
   .social__item {
     &--header {
       margin-right: 12px;
-
-      & .social__svg {
-        &--vk {
-          width: 13px;
-          height: 8px;
-        }
-
-        &--twitter {
-          width: 15px;
-          height: 10.4px;
-        }
-
-        &--facebook {
-          width: 5px;
-          height: 11px;
-        }
-      }
     }
 
     &--card {
@@ -183,6 +157,27 @@
   }
 
   .social__svg {
+    &--header {
+      &.social__svg--vk {
+        width: 13px;
+        height: 8px;
+      }
+
+      &.social__svg--twitter {
+        width: 15px;
+        height: 10.4px;
+      }
+
+      &.social__svg--facebook {
+        width: 5px;
+        height: 11px;
+      }
+    }
+
+    &--footer {
+      fill: $purple;
+    }
+
     &--vk {
       width: 13px;
       height: 8px;
