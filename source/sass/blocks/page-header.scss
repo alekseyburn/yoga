@@ -10,33 +10,16 @@
   padding: 0;
 
   font-size: 0;
-  cursor: pointer;
+
   background-color: transparent;
   border: none;
-
-  transition: color 0.1s ease-out;
-
-  &:hover,
-  &:focus {
-    color: $main-text-hover;
-
-    & .page-header__svg {
-      stroke: $main-text-hover;
-    }
-  }
-
-  &:active {
-    color: $second-text;
-
-    & .page-header__svg {
-      stroke: $second-text;
-    }
-  }
+  cursor: pointer;
 }
 
 .page-header__svg {
-  stroke: #8E80A9;
   transition: stroke 0.1s ease-out;
+
+  stroke: #8e80a9;
 }
 
 .page-header__phone {
@@ -44,11 +27,12 @@
 
   font-size: $font-size-m;
   color: $main-text;
+
   transition: color 0.1s ease-out;
 
   &:hover,
   &:focus {
-    color: $main-text-hover;
+    color: $dark-purple;
   }
 
   &:active {
@@ -94,6 +78,25 @@
   .page-header__toggle {
     font-size: $font-size-l;
     line-height: 15px;
+
+    transition: color 0.1s ease-out;
+
+    &:hover,
+    &:focus {
+      color: $dark-purple;
+
+      & .page-header__svg {
+        stroke: $dark-purple;
+      }
+    }
+
+    &:active {
+      color: $second-text;
+
+      & .page-header__svg {
+        stroke: $second-text;
+      }
+    }
   }
 
   .page-header__svg {

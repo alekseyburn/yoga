@@ -20,6 +20,12 @@
   &::placeholder {
     color: $light-purple;
   }
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $second-text;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
