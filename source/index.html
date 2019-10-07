@@ -136,14 +136,18 @@
     <section class="subscriptions section">
       <h2 class="subscriptions__title section__title">Абонементы</h2>
       <form class="subscriptions__form month-select" method="GET">
-        <label class="month-select__radio month-select__radio--active">
-          <input class="month-select__input visually-hidden" type="radio" name="months" value="1 месяц" checked>1 месяц
+        <input class="month-select__input visually-hidden" id="radio1" type="radio" name="months" value="1 месяц"
+               checked>
+        <label for="radio1" class="month-select__radio month-select__radio--active">
+          1 месяц
         </label>
-        <label class="month-select__radio">
-          <input class="month-select__input visually-hidden" type="radio" name="months" value="6 месяцев">6 месяцев
+        <input class="month-select__input visually-hidden" id="radio2" type="radio" name="months" value="6 месяцев">
+        <label for="radio2" class="month-select__radio">
+          6 месяцев
         </label>
-        <label class="month-select__radio">
-          <input class="month-select__input visually-hidden" type="radio" name="months" value="12 месяцев">12 месяцев
+        <input class="month-select__input visually-hidden" id="radio3" type="radio" name="months" value="12 месяцев">
+        <label for="radio3" class="month-select__radio">
+          12 месяцев
         </label>
       </form>
       <ul class="subscriptions__list">
@@ -315,7 +319,8 @@
             <div class="team__buttons-wrapper">
               <button class="team__button button button--left button--team button--team-left button--disabled"
                       type="button"
-                      aria-label="Предыдущий Инструктор"></button>
+                      aria-label="Предыдущий Инструктор"
+                      disabled></button>
               <p class="team__counter"><span class="team__counter--start">1</span> / <span
                 class="team__counter--end">9</span>
               </p>
@@ -445,7 +450,7 @@
       <div class="reviews__slider-wrapper">
         <button class="reviews__btn button button--left button--reviews button--reviews-left button--disabled"
                 type="button"
-                aria-label="Предыдущий комментарий"></button>
+                aria-label="Предыдущий комментарий" disabled></button>
         <p class="reviews__counter"><span class="reviews__start">1</span> / <span class="reviews__end">9</span></p>
         <button class="button button--right button--reviews button--reviews-right" type="button"
                 aria-label="Следующий комментарий"></button>

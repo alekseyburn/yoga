@@ -54,6 +54,10 @@
     background-position: center center;
     background-size: 5px 10px;
   }
+
+  &:active {
+    color: $dark-purple;
+  }
 }
 
 .first-page__city {
@@ -125,17 +129,57 @@
     font-size: $font-size-m + 2px;
     line-height: 150%;
 
+    transition: color 0.3s ease-out, text-shadow 0.5s ease-out;
+
     &::before {
       top: -5px;
 
       width: 56px;
       height: 48px;
 
-      background-size: 14px 20px;
-    }
-  }
+      background-image: url("../img/icon-arrow.svg"), linear-gradient(90deg, $main-text 50%, rgba(230, 92, 123, 1) 100%);
+      background-repeat: no-repeat;
+      background-position: center center, -112px center;
+      background-size: 14px 20px, 112px 48px;
 
-  .first-page__city {
-    font-size: $font-size-l;
+      animation: gradient-rev 0.3s ease-out;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 260px;
+      bottom: -1px;
+      left: 0;
+      z-index: 2;
+
+      height: 2px;
+
+      background-color: $main-text;
+
+      transition: right 0.1s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      color: $main-text;
+      text-shadow: 0 3px 4px $main-text;
+
+      outline: none;
+
+      &::before {
+        animation: gradient 0.5s ease-out forwards;
+      }
+
+      &::after {
+        right: 0;
+
+        transition: right 0.5s ease-out 0.1s;
+      }
+    }
+
+    .first-page__city {
+      font-size: $font-size-l;
+    }
   }
 }

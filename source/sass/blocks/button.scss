@@ -4,6 +4,7 @@
   background-position: center center;
   background-size: 9px 13px;
   border: none;
+  cursor: pointer;
 
   &--right {
     background-image: url("../img/icon-arrow-right.svg");
@@ -70,6 +71,8 @@
 
 @media (min-width: $desktop-width) {
   .button {
+    transition: background-color 0.3s ease-out;
+
     &--card {
       width: 45px;
       height: 30px;
@@ -97,6 +100,17 @@
       &-right {
         right: -22px;
       }
+    }
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
+      background-color: $dark-purple;
+
+      animation: pulse-min 0.3s ease-out;
+    }
+
+    &:active {
+      background-color: $second-text;
     }
   }
 }

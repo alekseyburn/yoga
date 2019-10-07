@@ -233,8 +233,21 @@
   .subscriptions__link {
     font-size: $font-size-m;
 
+    transition: background-color 0.3s ease-out;
+
     &--main {
       padding: 18px 23px 19px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $dark-purple;
+
+      animation: pulse-min 0.3s ease-out;
+    }
+
+    &:active {
+      background-color: $second-text;
     }
   }
 }

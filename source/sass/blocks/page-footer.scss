@@ -56,12 +56,13 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    padding: 70px 0 0;
     overflow-x: hidden;
+
+    background-color: $light-bg;
     background-image: url("../img/bg-footer-clouds-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: $light-bg;
-    padding: 70px 0 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-footer-clouds-desktop@2x.jpg");
@@ -78,46 +79,64 @@
   }
 
   .page-footer__record {
-    order: 2;
     flex-basis: 407px;
+    order: 2;
   }
 
   .page-footer__contacts {
-    order: 1;
     flex-basis: 336px;
-    background-color: transparent;
+    order: 1;
     padding: 101px 32px 0;
+
+    background-color: transparent;
   }
 
   .page-footer__copyright {
     position: relative;
+
+    justify-content: space-between;
     order: 3;
     width: 957px;
     margin: 0 auto;
-    justify-content: space-between;
     padding: 30px 2px 25px 32px;
 
     &::after {
       content: "";
       position: absolute;
-      width: 110vw;
       top: 0;
-      left: -25vw;
       bottom: 0;
-      background-color: $purple;
+      left: -25vw;
       z-index: 0;
+
+      width: 110vw;
+
+      background-color: $purple;
     }
   }
 
   .page-footer__rights {
     position: relative;
     z-index: 1;
+
     order: 2;
     margin-right: 0;
   }
   .page-footer__link {
     position: relative;
     z-index: 1;
+
     order: 1;
+
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      color: $second-text;
+      text-shadow: 0 3px 4px $main-text;
+    }
+
+    &:active {
+      color: $dark-purple;
+    }
   }
 }

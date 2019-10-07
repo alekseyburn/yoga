@@ -137,6 +137,18 @@
   .card__watch-link {
     margin-bottom: 0;
 
-    font-size: 12px;
+    font-size: $font-size-m;
+
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      color: $dark-purple;
+      text-shadow: 0 3px 4px $main-text;
+    }
+
+    &:active {
+      color: $second-text;
+    }
   }
 }

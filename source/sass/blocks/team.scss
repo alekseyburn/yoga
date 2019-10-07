@@ -9,8 +9,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-team-patterns-mobile@2x.png");
-    background-size: contain;
     background-position: left -19px;
+    background-size: contain;
   }
 }
 
@@ -123,8 +123,6 @@
   .team__description {
     margin-bottom: 15px;
   }
-
-
 
   .team__counter {
     display: block;

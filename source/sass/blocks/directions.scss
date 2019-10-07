@@ -1,8 +1,9 @@
 .directions {
+  z-index: -1;
+
   display: flex;
   flex-direction: column;
   padding: 0 $mobile-indent 8px;
-  z-index: -1;
 
   background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
@@ -37,6 +38,7 @@
   height: 0;
   padding-bottom: 80%;
   overflow: hidden;
+
   background-color: rgb(78, 78, 78);
 }
 
@@ -144,7 +146,6 @@
   }
 
   .directions__img {
-
     &--main {
       top: 55%;
       left: 52%;
@@ -167,7 +168,6 @@
   }
 
   .directions__days {
-
     &:last-of-type {
       margin-bottom: 7px;
     }
@@ -274,6 +274,18 @@
 
   .directions__instructor {
     font-size: $font-size-m;
+
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      color: $dark-purple;
+      text-shadow: 0 3px 4px $main-text;
+    }
+
+    &:active {
+      color: $second-text;
+    }
   }
 
   .directions__link {
@@ -290,5 +302,19 @@
     padding: 16px;
 
     font-size: $font-size-m;
+
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out, box-shadow 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+      color: $dark-purple;
+      text-shadow: 0 3px 4px $main-text;
+
+      box-shadow: 0 10px 9px rgba(30, 30, 44, 0.5);
+    }
+
+    &:active {
+      color: $second-text;
+    }
   }
 }

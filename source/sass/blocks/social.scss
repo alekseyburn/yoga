@@ -39,26 +39,11 @@
   &--card {
     line-height: 120%;
   }
-
-  &:hover,
-  &:focus {
-    outline: none;
-
-    & .social__svg {
-      fill: #412A6E;
-      animation: pulse 0.4s ease-out;
-    }
-  }
-
-  &:active {
-    & .social__svg {
-      fill: $second-text;
-    }
-  }
 }
 
 .social__svg {
   transition: fill 0.3s;
+
   fill: $white;
 
   &--card {
@@ -169,6 +154,25 @@
 
       &:first-child {
         margin-left: 0;
+      }
+    }
+  }
+
+  .social__link {
+    &:hover,
+    &:focus {
+      outline: none;
+
+      & .social__svg {
+        animation: pulse 0.4s ease-out;
+
+        fill: #412a6e;
+      }
+    }
+
+    &:active {
+      & .social__svg {
+        fill: $second-text;
       }
     }
   }

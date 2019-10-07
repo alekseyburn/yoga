@@ -4,12 +4,46 @@
 }
 
 .month-select__radio {
+  position: relative;
+
   font-size: $font-size-m;
   color: $second-text;
 
-  &--active {
-    border-bottom: 1px solid $second-text;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 51%;
+    bottom: 0;
+    left: 51%;
+    z-index: -1;
+
+    height: 1px;
+
+    background: $second-text;
+
+    transition-timing-function: ease-out;
+    transition-duration: 0.3s;
+    transition-property: left, right;
   }
+}
+
+.month-select__input:checked + .month-select__radio::before {
+  right: 0;
+  left: 0;
+
+  background: $second-text;
+}
+
+.month-select__input:hover + .month-select__radio::before,
+.month-select__input:focus + .month-select__radio::before {
+  right: 0;
+  left: 0;
+
+  background: $dark-purple;
+
+  animation: jump 0.8s infinite;
 }
 
 @media (min-width: $tablet-width) {
