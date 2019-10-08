@@ -125,7 +125,7 @@
   }
 
   .subscriptions__item {
-    flex-basis: 28.2%;
+    width: 28.2%;
     margin-bottom: 0;
     padding: 38px 36px 29px;
 
@@ -134,7 +134,7 @@
     }
 
     &--main {
-      flex-basis: 35.6%;
+      width: 35.6%;
       padding-bottom: 39px;
     }
   }

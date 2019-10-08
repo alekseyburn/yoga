@@ -63,7 +63,7 @@
 
     &--card {
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: flex-start;
     }
   }
@@ -73,6 +73,13 @@
       margin-right: 5px;
     }
 
+    &--card {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
     &--reviews {
       margin-right: 11px;
     }
@@ -89,6 +96,10 @@
   .social__svg {
     &--header {
       fill: rgba($main-text, 0.65);
+    }
+
+    &--card {
+      vertical-align: middle;
     }
 
     &--reviews {
@@ -150,6 +161,7 @@
     }
 
     &--card {
+      margin-right: 0;
       margin-left: 12px;
 
       &:first-child {
