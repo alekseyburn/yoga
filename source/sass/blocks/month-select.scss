@@ -29,6 +29,10 @@
   }
 }
 
+.month-select__input {
+  appearance: none;
+}
+
 .month-select__input:checked + .month-select__radio::before {
   right: 0;
   left: 0;

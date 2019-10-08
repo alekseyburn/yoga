@@ -55,7 +55,7 @@
 }
 
 .directions__info-wrapper {
-  flex-basis: 83%;
+  width: 83%;
   padding: 16px 20px 15px;
 
   background-color: $white;
@@ -81,7 +81,7 @@
 }
 
 .directions__link {
-  flex-basis: 17%;
+  width: 17%;
 }
 
 .directions__link-more {
@@ -155,11 +155,11 @@
   }
 
   .directions__info-wrapper {
-    flex-basis: 58%;
+    width: 58%;
     padding: 19px 21px 16px;
 
     &--main {
-      flex-basis: 83%;
+      width: 83%;
     }
   }
 
@@ -178,10 +178,14 @@
     right: 24px;
     bottom: 24px;
 
+    width: 30px;
+
     &--main {
       position: static;
       right: auto;
       bottom: auto;
+
+      width: 17%;
     }
   }
 
@@ -248,11 +252,11 @@
   }
 
   .directions__info-wrapper {
-    flex-basis: 305px;
+    width: 305px;
     padding: 33px 35px 32px;
 
     &--main {
-      flex-basis: 83%;
+      width: 83%;
       padding: 42px 46px 25px;
     }
   }
@@ -292,9 +296,13 @@
     right: 36px;
     bottom: 37px;
 
+    width: 45px;
+
     &--main {
       right: auto;
       bottom: auto;
+
+      width: 17%;
     }
   }
 
