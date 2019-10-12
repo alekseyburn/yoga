@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 $mobile-indent 58px;
+  padding-bottom: 58px;
 }
 
 .reviews__title {
@@ -8,13 +8,17 @@
 
 .reviews__list {
   margin-bottom: 17px;
+  overflow: hidden;
+  padding-top: 38px;
+  min-height: 455px;
+  position: relative;
 }
 
 .reviews__item {
-  position: relative;
+  position: absolute;
+  //width: 100%;
 
-  display: none;
-  margin: 0;
+  margin: 0 $mobile-indent;
   padding: 60px 15px 30px;
 
   background-color: $white;
@@ -32,9 +36,9 @@
     background-image: url("../img/icon-quotes.svg");
   }
 
-  &:first-child {
-    display: block;
-  }
+  //&:first-child {
+  //  display: block;
+  //}
 }
 
 .reviews__text {

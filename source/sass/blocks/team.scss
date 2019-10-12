@@ -15,11 +15,20 @@
 }
 
 .team__title {
-  margin: 0 0 37px;
+  margin: 0;
 }
 
 .team__list {
   @include reset-list;
+  overflow: hidden;
+  padding-top: 38px;
+  min-height: 455px;
+  position: relative;
+}
+
+.team__item {
+  position: absolute;
+  width: 100%;
 }
 
 .team__column-left {
@@ -54,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .team {
-    padding: 0 $tablet-indent - 11px 109px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
 
     background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
@@ -67,11 +76,12 @@
   }
 
   .team__title {
-    margin-bottom: 72px;
+    margin-bottom: 35px;
   }
 
   .team__list {
-    margin-bottom: 28px;
+    margin-bottom: 1px;
+    min-height: 380px;
   }
 
   .team__item {
@@ -138,7 +148,7 @@
 
 @media (min-width: $desktop-width) {
   .team {
-    padding: 0 $desktop-indent - 43px 96px $desktop-indent - 43px;
+    padding: 0 $desktop-indent - 43px 141px $desktop-indent - 43px;
 
     background-image: url("../img/bg-subs-patterns-desktop@1x.png");
     background-repeat: no-repeat;
@@ -172,12 +182,14 @@
 
   .team__title {
     margin-right: 45px;
-    margin-bottom: 121px;
+    margin-bottom: 66px;
   }
 
   .team__list {
-    max-width: 976px;
-    margin: 0 auto 44px;
+    width: 976px;
+    margin: 0 auto;
+    padding-top: 56px;
+    min-height: 593px;
   }
 
   .team__column-left {
@@ -193,7 +205,9 @@
   }
 
   .team__buttons-wrapper {
-    justify-content: flex-end;
+    margin: 0 auto;
+    width: 156px;
+    transform: translateX(-145px);
   }
 
   .team__counter {

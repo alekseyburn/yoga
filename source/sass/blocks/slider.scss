@@ -1,0 +1,51 @@
+.active {
+  z-index: 1000;
+}
+
+.slide-js {
+  z-index: 500;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.non-visible {
+  opacity: 0;
+}
+
+.slideInLeft {
+  animation-name: animateInLeft;
+  z-index: 1000;
+}
+
+.slideInRight {
+  animation-name: animateInRight;
+  z-index: 1000;
+}
+
+.slideOutLeft {
+  transform: translateX(-120%);
+}
+
+.slideOutRight {
+  transform: translateX(120%);
+}
+
+@keyframes animateInLeft {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animateInRight {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

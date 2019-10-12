@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Занятия йогой</title>
   <link rel="stylesheet" href="css/style.min.css">
+
   <script src="js/iepolyfills.min.js"></script>
 </head>
 <body>
@@ -174,8 +175,8 @@
     </section>
     <section class="team section">
       <h2 class="team__title section__title">Наша команда</h2>
-      <ul class="team__list">
-        <li class="team__item">
+      <ul class="team__list slider-js">
+        <li class="team__item slide-js active">
           <div class="team__column-left">
             <ul class="team__cards-list">
               <li class="team__cards-item card card--hatha">
@@ -317,17 +318,328 @@
                 </div>
               </li>
             </ul>
-            <div class="team__buttons-wrapper">
-              <button class="team__button button button--left button--team button--team-left button--disabled"
-                      type="button"
-                      aria-label="Предыдущий Инструктор"
-                      disabled></button>
-              <p class="team__counter"><span class="team__counter--start">1</span> / <span
-                class="team__counter--end">9</span>
-              </p>
-              <button class="team__button button button--right button--team button--team-right" type="button"
-                      aria-label="Следующий Инструктор"></button>
-            </div>
+          </div>
+          <div class="team__column-right">
+            <h3 class="team__instructor-name">Серёжа Попов</h3>
+            <p class="team__skill">Опыт преподавания: 8 лет</p>
+            <p class="team__description">Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге.
+              Большой опыт преподавания йоги для начинающих и продолжающих.</p>
+            <p class="team__description">Обучался в Индии (International Association of
+              Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник,
+              проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги
+              Виктора Бойко.</p>
+            <p class="team__description">Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу
+              (Оздоровительный Витал –
+              центр №401).</p>
+            <p class="team__description">Организатор и участник многочисленных конвенций и семинаров по йоге,
+              медитативным
+              техникам и
+              здоровому питанию.</p>
+          </div>
+        </li>
+        <li class="team__item slide-js">
+          <div class="team__column-left">
+            <ul class="team__cards-list">
+              <li class="team__cards-item card card--hatha">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Хатха-йога</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+              <li class="team__cards-item card">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Флоу-йога</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+              <li class="team__cards-item card">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Йога в гамаках</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="team__column-right">
+            <h3 class="team__instructor-name">Серёжа Попов</h3>
+            <p class="team__skill">Опыт преподавания: 8 лет</p>
+            <p class="team__description">Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге.
+              Большой опыт преподавания йоги для начинающих и продолжающих.</p>
+            <p class="team__description">Обучался в Индии (International Association of
+              Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник,
+              проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги
+              Виктора Бойко.</p>
+            <p class="team__description">Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу
+              (Оздоровительный Витал –
+              центр №401).</p>
+            <p class="team__description">Организатор и участник многочисленных конвенций и семинаров по йоге,
+              медитативным
+              техникам и
+              здоровому питанию.</p>
+          </div>
+        </li>
+        <li class="team__item slide-js">
+          <div class="team__column-left">
+            <ul class="team__cards-list">
+              <li class="team__cards-item card card--hatha">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Хатха-йога</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+              <li class="team__cards-item card">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Флоу-йога</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+              <li class="team__cards-item card">
+                <picture class="card__picture">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1150px)"
+                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
+                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                </picture>
+                <div class="card__wrapper">
+                  <div class="card__sub-wrapper">
+                    <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
+                    <p class="card__direction">Йога в гамаках</p>
+                  </div>
+                  <div class="card__sub-wrapper">
+                    <ul class="card__links-list social social--card">
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--vk" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Вконтакте">
+                          <svg class="social__svg social__svg--card social__svg--vk" width="16" height="10">
+                            <use xlink:href="../img/sprite.svg#icon-vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social__item social__item--card">
+                        <a class="social__link social__link--card social__link--twitter" href="#" target="_blank"
+                           rel="noreferrer noopener"
+                           aria-label="Твиттер">
+                          <svg class="social__svg social__svg--card social__svg--twitter" width="18" height="12">
+                            <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <a class="card__watch-link" href="#">Смотреть</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="team__column-right">
             <h3 class="team__instructor-name">Серёжа Попов</h3>
@@ -348,12 +660,20 @@
           </div>
         </li>
       </ul>
-
+      <div class="team__buttons-wrapper slider-btns-js">
+        <button class="team__button button button--left button--team button--team-left slider-back-btn-js"
+                type="button"
+                aria-label="Предыдущий Инструктор"></button>
+        <p class="team__counter"><span class="team__counter--start">1</span> / <span class="team__counter--end">9</span></p>
+        <button class="team__button button button--right button--team button--team-right slider-next-btn-js"
+                type="button"
+                aria-label="Следующий Инструктор"></button>
+      </div>
     </section>
     <section class="reviews section">
       <h2 class="reviews__title section__title">Отзывы</h2>
-      <div class="reviews__list">
-        <blockquote class="reviews__item">
+      <div class="reviews__list slider-js">
+        <blockquote class="reviews__item slide-js active">
           <p class="reviews__text">Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И&nbsp;после&nbsp;занятий
             наступает спокойствие!</p>
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
@@ -400,7 +720,7 @@
             </div>
           </div>
         </blockquote>
-        <blockquote class="reviews__item">
+        <blockquote class="reviews__item slide-js">
           <p class="reviews__text">Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И&nbsp;после&nbsp;занятий
             наступает спокойствие!</p>
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
@@ -448,12 +768,12 @@
           </div>
         </blockquote>
       </div>
-      <div class="reviews__slider-wrapper">
-        <button class="reviews__btn button button--left button--reviews button--reviews-left button--disabled"
+      <div class="reviews__slider-wrapper slider-btns-js">
+        <button class="reviews__btn button button--left button--reviews button--reviews-left slider-back-btn-js"
                 type="button"
-                aria-label="Предыдущий комментарий" disabled></button>
+                aria-label="Предыдущий комментарий"></button>
         <p class="reviews__counter"><span class="reviews__start">1</span> / <span class="reviews__end">9</span></p>
-        <button class="button button--right button--reviews button--reviews-right" type="button"
+        <button class="button button--right button--reviews button--reviews-right slider-next-btn-js" type="button"
                 aria-label="Следующий комментарий"></button>
       </div>
     </section>
