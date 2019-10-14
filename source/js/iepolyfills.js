@@ -28,6 +28,13 @@ if (/Trident.*rv:/.test(navigator.userAgent)) {
     'js/svgxuse.min.js');
 }
 
+// if (window.matchMedia('(min-width: 768px)').matches) {
+//   const reviewsSlides = document.querySelectorAll('.reviews__item');
+//   reviewsSlides[0].classList.add('active');
+//   reviewsSlides[1].classList.add('active');
+// }
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const SLIDETIME = 500;
   const backButton = document.querySelectorAll('.slider-back-btn-js');
@@ -40,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function initSlider(slides, item, number) {
     const allSlides = [
       ...document.querySelector(slides)
-        .querySelectorAll('.slide-js')];
+      .querySelectorAll('.slide-js')];
 
     allSlides.forEach((slide) => {
       slide.setAttribute(
@@ -62,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
           newActive = allSlides[(activeSlideIndex + 1) % allSlides.length];
           active.classList.add('slideOutLeft');
           newActive.classList.remove('non-visible');
-          newActive.classList.add('visible', 'slideInRight', 'active');
+          newActive.classList.add('slideInRight', 'active');
         } else {
           newActive = allSlides[(activeSlideIndex - 1 + allSlides.length)
           % allSlides.length];

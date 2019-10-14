@@ -20,7 +20,7 @@ const iife = require('gulp-iife');
 const isProduction = process.env.NODE_ENV;
 
 gulp.task('html', () => gulp.src('source/**/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
+  // .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
   .pipe(server.stream()));
 
@@ -78,7 +78,7 @@ gulp.task('js', () => {
   return gulp.src('source/js/**/*.js')
     .pipe(sourcemap.init())
     .pipe(babel({ presets: ['@babel/preset-env'] }))
-    .pipe(uglyfly())
+    // .pipe(uglyfly())
     .pipe(iife({ useStrict: false }))
     .pipe(rename({ extname: '.min.js' }))
     .pipe(sourcemap.write('.'))

@@ -8,10 +8,12 @@
 
 .visible {
   opacity: 1;
+  //display: flex;
 }
 
 .non-visible {
   opacity: 0;
+  display: none;
 }
 
 .slideInLeft {
