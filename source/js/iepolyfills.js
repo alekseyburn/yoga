@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function initSlider(slides, item, number) {
     const allSlides = [
       ...document.querySelector(slides)
-      .querySelectorAll('.slide-js')];
+        .querySelectorAll('.slide-js')];
 
     allSlides.forEach((slide) => {
       slide.setAttribute(
@@ -100,4 +100,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initSlider('.team__list', 'team__item', '1');
   initSlider('.reviews__list', 'reviews__item', '2');
+});
+
+// const allCards = document.querySelectorAll('.subscriptions__item');
+// allCards.forEach((item) => {
+//   const wrapper = document.createElement('div');
+//   wrapper.className = 'subscription__item-wrapper';
+//   wrapper.style.transition = 'transform 0.2s;';
+//   wrapper.innerHTML = item.innerHTML;
+//   item.innerHTML = wrapper.outerHTML;
+// });
+
+const cards = document.querySelectorAll('.subscriptions__item');
+
+function startRotate(event) {
+  const cardItem = this.querySelector('.subscriptions__wrapper');
+  const halfHeight = cardItem.offsetHeight / 2;
+  const halfWidth = cardItem.offsetWidth / 2;
+  cardItem.style.transform = `rotateX(${-(event.offsetY - halfHeight) / 7}deg) 
+                              rotateY(${(event.offsetX - halfWidth) / 7}deg)`;
+}
+function stopRotate() {
+  const cardItem = this.querySelector('.subscriptions__wrapper');
+  cardItem.style.transform = 'rotate(0)';
+}
+
+cards.forEach((item) => {
+  item.addEventListener('mousemove', startRotate);
+  item.addEventListener('mouseout', stopRotate);
+});
+
+
+const form = document.querySelector('.form');
+const name = form.querySelector('[name=name]');
+const phone = form.querySelector('[name=phone]');
+let isStorageSupport = true;
+const storage = {
+  name: '',
+  phone: '',
+};
+
+try {
+  storage.name = localStorage.getItem('name');
+  storage.phone = localStorage.getItem('phone');
+} catch (err) {
+  isStorageSupport = false;
+}
+
+if (storage.name) {
+  name.value = storage.name;
+}
+if (storage.phone) {
+  phone.value = storage.phone;
+}
+
+form.addEventListener('submit', () => {
+  if (isStorageSupport) {
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('phone', phone.value);
+  }
 });
