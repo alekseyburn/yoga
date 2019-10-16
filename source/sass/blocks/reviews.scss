@@ -103,6 +103,8 @@
   align-items: center;
   width: 106px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .reviews__counter {
