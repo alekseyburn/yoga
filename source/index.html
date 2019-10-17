@@ -57,19 +57,36 @@
       <div class="directions__item directions__item--main">
         <picture class="directions__picture directions__picture--main">
           <source type="image/webp" media="(min-width: 1150px)"
-                  srcset="../img/img-hatha-yoga-desktop@1x.webp 1x, ../img/img-hatha-yoga-desktop@2x.webp 2x">
+                  data-srcset="../img/img-hatha-yoga-desktop@1x.webp 1x, ../img/img-hatha-yoga-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
-                  srcset="../img/img-hatha-yoga-tablet@1x.webp 1x, ../img/img-hatha-yoga-tablet@2x.webp 2x">
+                  data-srcset="../img/img-hatha-yoga-tablet@1x.webp 1x, ../img/img-hatha-yoga-tablet@2x.webp 2x">
           <source type="image/webp"
-                  srcset="../img/img-hatha-yoga-mobile@1x.webp 1x, ../img/img-hatha-yoga-mobile@2x.webp 2x">
+                  data-srcset="../img/img-hatha-yoga-mobile@1x.webp 1x, ../img/img-hatha-yoga-mobile@2x.webp 2x">
 
           <source media="(min-width: 1150px)"
-                  srcset="../img/img-hatha-yoga-desktop@1x.jpg 1x, ../img/img-hatha-yoga-desktop@2x.jpg 2x">
+                  data-srcset="../img/img-hatha-yoga-desktop@1x.jpg 1x, ../img/img-hatha-yoga-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
-                  srcset="../img/img-hatha-yoga-tablet@1x.jpg 1x, ../img/img-hatha-yoga-tablet@2x.jpg 2x">
-          <img class="directions__img directions__img--main" src="../img/img-hatha-yoga-mobile@1x.jpg"
-               srcset="../img/img-hatha-yoga-mobile@2x.jpg 2x" alt="Хатха-йога">
+                  data-srcset="../img/img-hatha-yoga-tablet@1x.jpg 1x, ../img/img-hatha-yoga-tablet@2x.jpg 2x">
+          <img class="directions__img directions__img--main lazyload" data-src="../img/img-hatha-yoga-mobile@1x.jpg"
+               data-srcset="../img/img-hatha-yoga-mobile@2x.jpg 2x" alt="Хатха-йога" loading="lazy">
         </picture>
+        <noscript>
+          <picture class="directions__picture directions__picture--main">
+            <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="../img/img-hatha-yoga-desktop@1x.webp 1x, ../img/img-hatha-yoga-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="../img/img-hatha-yoga-tablet@1x.webp 1x, ../img/img-hatha-yoga-tablet@2x.webp 2x">
+            <source type="image/webp"
+                    srcset="../img/img-hatha-yoga-mobile@1x.webp 1x, ../img/img-hatha-yoga-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1150px)"
+                    srcset="../img/img-hatha-yoga-desktop@1x.jpg 1x, ../img/img-hatha-yoga-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+                    srcset="../img/img-hatha-yoga-tablet@1x.jpg 1x, ../img/img-hatha-yoga-tablet@2x.jpg 2x">
+            <img class="directions__img directions__img--main lazyload" src="../img/img-hatha-yoga-mobile@1x.jpg"
+                 srcset="../img/img-hatha-yoga-mobile@2x.jpg 2x" alt="Хатха-йога" loading="lazy">
+          </picture>
+        </noscript>
         <div class="directions__info-wrapper directions__info-wrapper--main">
           <h3 class="directions__name">Хатха-йога</h3>
           <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
@@ -83,19 +100,36 @@
         <li class="directions__item">
           <picture class="directions__picture">
             <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="../img/img-ashatanga-yoga-desktop@1x.webp 1x, ../img/img-ashatanga-yoga-desktop@2x.webp 2x">
+                    data-srcset="../img/img-ashatanga-yoga-desktop@1x.webp 1x, ../img/img-ashatanga-yoga-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-                    srcset="../img/img-ashatanga-yoga-tablet@1x.webp 1x, ../img/img-ashatanga-yoga-tablet@2x.webp 2x">
+                    data-srcset="../img/img-ashatanga-yoga-tablet@1x.webp 1x, ../img/img-ashatanga-yoga-tablet@2x.webp 2x">
             <source type="image/webp"
-                    srcset="../img/img-ashatanga-yoga-mobile@1x.webp 1x, ../img/img-ashatanga-yoga-mobile@2x.webp 2x">
+                    data-srcset="../img/img-ashatanga-yoga-mobile@1x.webp 1x, ../img/img-ashatanga-yoga-mobile@2x.webp 2x">
 
             <source media="(min-width: 1150px)"
-                    srcset="../img/img-ashatanga-yoga-desktop@1x.jpg 1x, ../img/img-ashatanga-yoga-desktop@2x.jpg 2x">
+                    data-srcset="../img/img-ashatanga-yoga-desktop@1x.jpg 1x, ../img/img-ashatanga-yoga-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-                    srcset="../img/img-ashatanga-yoga-tablet@1x.jpg 1x, ../img/img-ashatanga-yoga-tablet@2x.jpg 2x">
-            <img class="directions__img" src="../img/img-ashatanga-yoga-mobile@1x.jpg"
-                 srcset="../img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога">
+                    data-srcset="../img/img-ashatanga-yoga-tablet@1x.jpg 1x, ../img/img-ashatanga-yoga-tablet@2x.jpg 2x">
+            <img class="directions__img lazyload" data-src="../img/img-ashatanga-yoga-mobile@1x.jpg"
+                 data-srcset="../img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
           </picture>
+          <noscript>
+            <picture class="directions__picture">
+              <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="../img/img-ashatanga-yoga-desktop@1x.webp 1x, ../img/img-ashatanga-yoga-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="../img/img-ashatanga-yoga-tablet@1x.webp 1x, ../img/img-ashatanga-yoga-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="../img/img-ashatanga-yoga-mobile@1x.webp 1x, ../img/img-ashatanga-yoga-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)"
+                      srcset="../img/img-ashatanga-yoga-desktop@1x.jpg 1x, ../img/img-ashatanga-yoga-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="../img/img-ashatanga-yoga-tablet@1x.jpg 1x, ../img/img-ashatanga-yoga-tablet@2x.jpg 2x">
+              <img class="directions__img lazyload" src="../img/img-ashatanga-yoga-mobile@1x.jpg"
+                   srcset="../img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
+            </picture>
+          </noscript>
           <div class="directions__info-wrapper">
             <h3 class="directions__name">Ашатанга-йога</h3>
             <p class="directions__days">Пн, Ср, Пт – с 11:00 до 14:00</p>
@@ -108,19 +142,36 @@
         <li class="directions__item">
           <picture class="directions__picture">
             <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="../img/img-cundalini-yoga-desktop@1x.webp 1x, ../img/img-cundalini-yoga-desktop@2x.webp 2x">
+                    data-srcset="../img/img-cundalini-yoga-desktop@1x.webp 1x, ../img/img-cundalini-yoga-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-                    srcset="../img/img-cundalini-yoga-tablet@1x.webp 1x, ../img/img-cundalini-yoga-tablet@2x.webp 2x">
+                    data-srcset="../img/img-cundalini-yoga-tablet@1x.webp 1x, ../img/img-cundalini-yoga-tablet@2x.webp 2x">
             <source type="image/webp"
-                    srcset="../img/img-cundalini-yoga-mobile@1x.webp 1x, ../img/img-cundalini-yoga-mobile@2x.webp 2x">
+                    data-srcset="../img/img-cundalini-yoga-mobile@1x.webp 1x, ../img/img-cundalini-yoga-mobile@2x.webp 2x">
 
             <source media="(min-width: 1150px)"
-                    srcset="../img/img-cundalini-yoga-desktop@1x.jpg 1x, ../img/img-cundalini-yoga-desktop@2x.jpg 2x">
+                    data-srcset="../img/img-cundalini-yoga-desktop@1x.jpg 1x, ../img/img-cundalini-yoga-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-                    srcset="../img/img-cundalini-yoga-tablet@1x.jpg 1x, ../img/img-cundalini-yoga-tablet@2x.jpg 2x">
-            <img class="directions__img" src="../img/img-cundalini-yoga-mobile@1x.jpg"
-                 srcset="../img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога">
+                    data-srcset="../img/img-cundalini-yoga-tablet@1x.jpg 1x, ../img/img-cundalini-yoga-tablet@2x.jpg 2x">
+            <img class="directions__img lazyload" data-src="../img/img-cundalini-yoga-mobile@1x.jpg"
+                 data-srcset="../img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
           </picture>
+          <noscript>
+            <picture class="directions__picture">
+              <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="../img/img-cundalini-yoga-desktop@1x.webp 1x, ../img/img-cundalini-yoga-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="../img/img-cundalini-yoga-tablet@1x.webp 1x, ../img/img-cundalini-yoga-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="../img/img-cundalini-yoga-mobile@1x.webp 1x, ../img/img-cundalini-yoga-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)"
+                      srcset="../img/img-cundalini-yoga-desktop@1x.jpg 1x, ../img/img-cundalini-yoga-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="../img/img-cundalini-yoga-tablet@1x.jpg 1x, ../img/img-cundalini-yoga-tablet@2x.jpg 2x">
+              <img class="directions__img lazyload" src="../img/img-cundalini-yoga-mobile@1x.jpg"
+                   srcset="../img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
+            </picture>
+          </noscript>
           <div class="directions__info-wrapper">
             <h3 class="directions__name">Кундалини-йога</h3>
             <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
@@ -188,19 +239,36 @@
               <li class="team__cards-item card card--hatha">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -234,19 +302,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -280,19 +365,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -349,19 +451,36 @@
               <li class="team__cards-item card card--hatha">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -395,19 +514,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -441,19 +577,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -510,19 +663,36 @@
               <li class="team__cards-item card card--hatha">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -556,19 +726,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -602,19 +789,36 @@
               <li class="team__cards-item card">
                 <picture class="card__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                          data-srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
                   <source type="image/webp"
-                          srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+                          data-srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
 
                   <source media="(min-width: 1150px)"
-                          srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                          data-srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                          srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
-                  <img class="card__avatar" src="../img/img-sergey-mobile@1x.jpg"
-                       srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                          data-srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                  <img class="card__avatar lazyload" data-src="../img/img-sergey-mobile@1x.jpg"
+                       data-srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
+                <noscript>
+                  <picture class="card__picture">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.webp 1x, ../img/img-sergey-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.webp 1x, ../img/img-sergey-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                            srcset="../img/img-sergey-mobile@1x.webp 1x, ../img/img-sergey-mobile@2x.webp 2x">
+
+                    <source media="(min-width: 1150px)"
+                            srcset="../img/img-sergey-desktop@1x.jpg 1x, ../img/img-sergey-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="../img/img-sergey-tablet@1x.jpg 1x, ../img/img-sergey-tablet@2x.jpg 2x">
+                    <img class="card__avatar lazyload" src="../img/img-sergey-mobile@1x.jpg"
+                         srcset="../img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+                  </picture>
+                </noscript>
                 <div class="card__wrapper">
                   <div class="card__sub-wrapper">
                     <p class="card__info"><span class="card__position">Инструктор </span><br>Серёжа&nbsp;Попов</p>
@@ -687,19 +891,36 @@
           <div class="reviews__wrapper">
             <picture class="reviews__picture">
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                      data-srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                      data-srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+                      data-srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                      data-srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
-              <img class="reviews__avatar" src="../img/img-serg-mobile@1x.jpg"
-                   srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                      data-srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+              <img class="reviews__avatar lazyload" data-src="../img/img-serg-mobile@1x.jpg"
+                   data-srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
+            <noscript>
+              <picture class="reviews__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+                <img class="reviews__avatar lazyload" src="../img/img-serg-mobile@1x.jpg"
+                     srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+              </picture>
+            </noscript>
             <div class="reviews__card-wrapper">
               <cite class="reviews__author">Серёжа Попов</cite>
               <time class="reviews__date" datetime="2018-05-16">16 мая 2018</time>
@@ -734,19 +955,36 @@
           <div class="reviews__wrapper">
             <picture class="reviews__picture">
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                      data-srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                      data-srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+                      data-srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                      data-srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
-              <img class="reviews__avatar" src="../img/img-serg-mobile@1x.jpg"
-                   srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                      data-srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+              <img class="reviews__avatar lazyload" data-src="../img/img-serg-mobile@1x.jpg"
+                   data-srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
+            <noscript>
+              <picture class="reviews__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+                <img class="reviews__avatar lazyload" src="../img/img-serg-mobile@1x.jpg"
+                     srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+              </picture>
+            </noscript>
             <div class="reviews__card-wrapper">
               <cite class="reviews__author">Серёжа Попов</cite>
               <time class="reviews__date" datetime="2018-05-16">24 июня 2018</time>
@@ -781,19 +1019,36 @@
           <div class="reviews__wrapper">
             <picture class="reviews__picture">
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                      data-srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                      data-srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+                      data-srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                      data-srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
-              <img class="reviews__avatar" src="../img/img-serg-mobile@1x.jpg"
-                   srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                      data-srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+              <img class="reviews__avatar lazyload" data-src="../img/img-serg-mobile@1x.jpg"
+                   data-srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
+            <noscript>
+              <picture class="reviews__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+                <img class="reviews__avatar lazyload" src="../img/img-serg-mobile@1x.jpg"
+                     srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+              </picture>
+            </noscript>
             <div class="reviews__card-wrapper">
               <cite class="reviews__author">Серёжа Попов</cite>
               <time class="reviews__date" datetime="2018-05-16">16 мая 2018</time>
@@ -828,19 +1083,36 @@
           <div class="reviews__wrapper">
             <picture class="reviews__picture">
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                      data-srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                      data-srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+                      data-srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                      data-srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
-              <img class="reviews__avatar" src="../img/img-serg-mobile@1x.jpg"
-                   srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов">
+                      data-srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+              <img class="reviews__avatar lazyload" data-src="../img/img-serg-mobile@1x.jpg"
+                   data-srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
+            <noscript>
+              <picture class="reviews__picture">
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.webp 1x, ../img/img-serg-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.webp 1x, ../img/img-serg-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="../img/img-serg-mobile@1x.webp 1x, ../img/img-serg-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="../img/img-serg-desktop@1x.jpg 1x, ../img/img-serg-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="../img/img-serg-tablet@1x.jpg 1x, ../img/img-serg-tablet@2x.jpg 2x">
+                <img class="reviews__avatar lazyload" src="../img/img-serg-mobile@1x.jpg"
+                     srcset="../img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
+              </picture>
+            </noscript>
             <div class="reviews__card-wrapper">
               <cite class="reviews__author">Серёжа Попов</cite>
               <time class="reviews__date" datetime="2018-05-16">24 июня 2018</time>

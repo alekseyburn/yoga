@@ -17,6 +17,7 @@ const uglyfly = require('gulp-uglyfly');
 const babel = require('gulp-babel');
 const iife = require('gulp-iife');
 const concat = require('gulp-concat');
+const order = require('gulp-order');
 
 const isProduction = process.env.NODE_ENV;
 
@@ -88,6 +89,10 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
 
 gulp.task('js', () => gulp.src('source/js/modules/**/*.js')
   .pipe(sourcemap.init())
+  .pipe(order([
+    'loadScripts.js',
+    '*.js',
+  ]))
   .pipe(concat('script.js'))
   .pipe(babel({ presets: ['@babel/preset-env'] }))
   .pipe(uglyfly())
@@ -107,6 +112,7 @@ gulp.task('copy', () => gulp.src([
   'source/fonts/**/*.{woff,woff2}',
   'source/img/*.ico',
   'source/css/*.css',
+  'source/js/*.js',
 ], {
   base: 'source',
 })
