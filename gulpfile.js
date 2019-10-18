@@ -18,6 +18,7 @@ const babel = require('gulp-babel');
 const iife = require('gulp-iife');
 const concat = require('gulp-concat');
 const order = require('gulp-order');
+const polyfill = require('@babel/polyfill');
 
 const isProduction = process.env.NODE_ENV;
 
@@ -68,27 +69,7 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
   ]))
   .pipe(gulp.dest('build/img')));
 
-// gulp.task('js', () => {
-//   if (isProduction) {
-//     return gulp.src('source/js/**/*.js')
-//       .pipe(babel({ presets: ['@babel/preset-env'] }))
-//       .pipe(uglyfly())
-//       .pipe(iife({ useStrict: false }))
-//       .pipe(rename({ extname: '.min.js' }))
-//       .pipe(gulp.dest('build/js'));
-//   }
-//   return gulp.src('source/js/**/*.js')
-//     .pipe(sourcemap.init())
-//     .pipe(babel({ presets: ['@babel/preset-env'] }))
-//     // .pipe(uglyfly())
-//     .pipe(iife({ useStrict: false }))
-//     .pipe(rename({ extname: '.min.js' }))
-//     .pipe(sourcemap.write('.'))
-//     .pipe(gulp.dest('build/js'));
-// });
-
 gulp.task('js', () => gulp.src('source/js/modules/**/*.js')
-  .pipe(sourcemap.init())
   .pipe(order([
     'loadScripts.js',
     '*.js',
@@ -100,7 +81,6 @@ gulp.task('js', () => gulp.src('source/js/modules/**/*.js')
   .pipe(rename((path) => {
     path.basename += '.min';
   }))
-  .pipe(sourcemap.write('.'))
   .pipe(gulp.dest('build/js')));
 
 gulp.task('sprite', () => gulp.src('source/img/{icon,logo}-*.svg')

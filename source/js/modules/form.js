@@ -1,7 +1,7 @@
 const form = document.querySelector('.form');
 
 document.addEventListener('DOMContentLoaded', () => {
-  form.querySelectorAll('input').forEach((e) => {
+  [...form.querySelectorAll('input')].forEach((e) => {
     e.value = window.sessionStorage.getItem(e.name, e.value);
 
     e.addEventListener('input', () => {

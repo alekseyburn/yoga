@@ -1,7 +1,7 @@
-const noscripts = document.querySelectorAll('noscript');
-noscripts.forEach((item) => {
-  item.remove();
-});
+// const noscripts = document.querySelectorAll('noscript');
+// noscripts.forEach((item) => {
+//   item.remove();
+// });
 if ('loading' in HTMLImageElement.prototype) {
   const images = document.querySelectorAll('img[loading="lazy"]');
   images.forEach(img => {
