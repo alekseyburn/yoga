@@ -802,12 +802,12 @@ body {
     .subscriptions__item--main {
       width: 35.6%; }
   .subscriptions__wrapper {
-    padding: 38px 36px 29px;
     width: 100%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding: 38px 36px 29px; }
     .subscriptions__wrapper--main {
-      padding-bottom: 39px;
-      width: 100%; }
+      width: 100%;
+      padding-bottom: 39px; }
   .subscriptions__name {
     margin-bottom: 7px;
     font-size: 18px; }
@@ -959,10 +959,10 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
-  padding-top: 38px;
+  position: relative;
   min-height: 455px;
-  position: relative; }
+  padding-top: 38px;
+  overflow: hidden; }
 
 .team__item {
   position: absolute;
@@ -1006,8 +1006,8 @@ body {
   .team__title {
     margin-bottom: 35px; }
   .team__list {
-    margin-bottom: 1px;
-    min-height: 380px; }
+    min-height: 380px;
+    margin-bottom: 1px; }
   .team__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1092,9 +1092,9 @@ body {
     margin-bottom: 66px; }
   .team__list {
     width: 976px;
+    min-height: 593px;
     margin: 0 auto;
-    padding-top: 56px;
-    min-height: 593px; }
+    padding-top: 56px; }
   .team__column-left {
     -ms-flex-preferred-size: 422px;
         flex-basis: 422px; }
@@ -1103,8 +1103,8 @@ body {
   .team__cards-item {
     margin-bottom: 89px; }
   .team__buttons-wrapper {
-    margin: 0 auto;
     width: 156px;
+    margin: 0 auto;
     -webkit-transform: translateX(-145px);
             transform: translateX(-145px); }
   .team__counter {
@@ -1262,19 +1262,19 @@ body {
   margin: 0; }
 
 .reviews__list {
-  overflow: hidden;
-  padding-top: 38px;
+  position: relative;
   min-height: 375px;
   margin: 0 auto -30px;
-  position: relative; }
+  padding-top: 38px;
+  overflow: hidden; }
 
 .reviews__item {
-  margin: 0 auto;
-  width: 100%;
+  position: absolute;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  position: absolute;
+  width: 100%;
+  margin: 0 auto;
   padding: 60px 15px 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
@@ -1344,6 +1344,8 @@ body {
   line-height: 0; }
 
 .reviews__slider-wrapper {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1354,9 +1356,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 106px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2; }
+  margin: 0 auto; }
 
 .reviews__counter {
   font-size: 12px; }
@@ -1370,8 +1370,8 @@ body {
   .reviews__title {
     margin-bottom: 1px; }
   .reviews__list {
-    margin-bottom: -10px;
-    min-height: 410px; }
+    min-height: 410px;
+    margin-bottom: -10px; }
   .reviews__item {
     margin: 0 0 18px;
     padding: 72px 55px 30px 87px; }
@@ -1407,9 +1407,9 @@ body {
     .reviews__item:last-child {
       margin-bottom: 0; }
   .reviews__slider-wrapper {
-    z-index: 2;
     position: absolute;
     top: 43.5%;
+    z-index: 2;
     width: 100%; }
   .reviews__counter {
     display: none; } }
@@ -1540,6 +1540,7 @@ body {
 
 .record {
   padding: 62px 35px 70px;
+  background-color: #F2EDFF;
   background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
@@ -1891,18 +1892,18 @@ body {
   opacity: 1; }
 
 .non-visible {
-  opacity: 0;
-  display: none; }
+  display: none;
+  opacity: 0; }
 
 .slideInLeft {
+  z-index: 1000;
   -webkit-animation-name: animateInLeft;
-          animation-name: animateInLeft;
-  z-index: 1000; }
+          animation-name: animateInLeft; }
 
 .slideInRight {
+  z-index: 1000;
   -webkit-animation-name: animateInRight;
-          animation-name: animateInRight;
-  z-index: 1000; }
+          animation-name: animateInRight; }
 
 .slideOutLeft {
   -webkit-transform: translateX(-120%);
