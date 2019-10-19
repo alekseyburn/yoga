@@ -18,7 +18,7 @@ const babel = require('gulp-babel');
 const iife = require('gulp-iife');
 const concat = require('gulp-concat');
 const order = require('gulp-order');
-const polyfill = require('@babel/polyfill');
+const ghPages = require('gh-pages');
 
 const isProduction = process.env.NODE_ENV;
 
@@ -121,5 +121,10 @@ gulp.task('refresh', (done) => {
   done();
 });
 
+gulp.task('deploy', (cb) => {
+  ghPages.publish('build', cb);
+});
+
 gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'webp', 'images', 'sprite', 'js'));
 gulp.task('start', gulp.series('build', 'server'));
+gulp.task('remote', gulp.series('build', 'deploy'));
