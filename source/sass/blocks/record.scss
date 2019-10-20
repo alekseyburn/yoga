@@ -1,6 +1,7 @@
 .record {
   padding: 62px $mobile-indent 70px;
 
+  background-color: $light-bg;
   background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +42,7 @@
     padding: 0;
 
     background-image: none;
+    background-color: transparent;
   }
 
   .record__title {

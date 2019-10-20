@@ -3,7 +3,7 @@
 
   display: flex;
   flex-direction: column;
-  padding: 0 $mobile-indent 8px;
+  padding: 0 $mobile-indent 7px;
 
   background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
@@ -25,38 +25,22 @@
 
 .directions__item {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 30px;
 
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 }
 
-.directions__picture {
-  position: relative;
-
-  width: 100%;
-  height: 0;
-  padding-bottom: 80%;
-  overflow: hidden;
-
-  background-color: rgb(78, 78, 78);
-}
-
 .directions__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  flex-basis: 100%;
-  width: auto;
-  height: 101%;
-
-  transform: translate(-50%,-50%);
+  display: block;
+  background-color: rgb(78, 78, 78);
+  object-fit: cover;
 }
 
 .directions__info-wrapper {
-  width: 83%;
+  width: 100%;
   padding: 16px 20px 15px;
+  position: relative;
 
   background-color: $white;
 }
@@ -82,6 +66,10 @@
 
 .directions__link {
   width: 17%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
 .directions__link-more {
@@ -93,7 +81,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 $tablet-indent - 11px 118px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 120px $tablet-indent;
 
     background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
     background-position: left -20px;
@@ -111,55 +99,42 @@
 
   .directions__list {
     flex-basis: 57%;
+    display: flex;
+    flex-direction: column;
   }
 
   .directions__item {
     position: relative;
+    flex-direction: row;
 
     flex-wrap: nowrap;
     margin-bottom: 19px;
 
     &--main {
-      flex-basis: 39.7%;
-      flex-wrap: wrap;
+      flex-direction: column;
+      flex-basis: 39.2%;
       margin-bottom: 0;
+      background-color: $white;
     }
 
     &:nth-last-child(2):not(.directions__item--main) {
-      margin-bottom: 39px;
+      margin-bottom: 35px;
     }
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  .directions__picture {
-    width: 42%;
-    height: auto;
-    padding-bottom: 34%;
-
-    &--main {
-      width: 100%;
-      padding-bottom: 84%;
-    }
-  }
-
-  .directions__img {
-    &--main {
-      top: 55%;
-      left: 52%;
-
-      height: 110%;
+      margin-top: auto;
     }
   }
 
   .directions__info-wrapper {
     width: 58%;
-    padding: 19px 21px 16px;
+    flex-grow: 1;
+    padding: 19px 19px 17px;
 
     &--main {
-      width: 83%;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -176,14 +151,15 @@
   .directions__link {
     position: absolute;
     right: 24px;
-    bottom: 24px;
+    bottom: 27px;
+    top: auto;
 
     width: 30px;
 
     &--main {
-      position: static;
-      right: auto;
-      bottom: auto;
+      right: 0;
+      bottom: 0;
+      top: 0;
 
       width: 17%;
     }
@@ -192,7 +168,7 @@
   .directions__link-more {
     display: block;
     flex-basis: 100%;
-    padding: 9px 9px 9px 0;
+    padding: 10px 9px 7px 0;
 
     text-align: center;
     color: $main-text;
@@ -206,7 +182,7 @@
   .directions {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 $desktop-indent 123px $desktop-indent - 35px;
+    padding: 0 $desktop-indent 125px $desktop-indent - 35px;
 
     background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
     background-position: 58% -61px;
@@ -222,6 +198,10 @@
     margin-left: 30px;
   }
 
+  .directions__list {
+    flex-basis: 56.8%;
+  }
+
   .directions__item {
     margin-bottom: 28px;
 
@@ -231,24 +211,16 @@
 
     &:last-child {
       margin-bottom: 0;
+      margin-top: 0;
     }
-  }
 
-  .directions__picture {
     &--main {
-      padding-bottom: 85%;
+      flex-basis: 39.5%;
     }
   }
 
   .directions__img {
     flex-basis: 41.9%;
-
-    &--main {
-      top: 50%;
-      left: 50%;
-
-      height: 101%;
-    }
   }
 
   .directions__info-wrapper {
@@ -256,7 +228,7 @@
     padding: 33px 35px 32px;
 
     &--main {
-      width: 83%;
+      width: 100%;
       padding: 42px 46px 25px;
     }
   }
@@ -299,8 +271,9 @@
     width: 45px;
 
     &--main {
-      right: auto;
-      bottom: auto;
+      right: 0;
+      bottom: 0;
+      top: 0;
 
       width: 17%;
     }

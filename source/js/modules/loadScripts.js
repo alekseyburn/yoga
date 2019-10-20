@@ -1,3 +1,5 @@
+document.querySelector('html').classList.remove('no-js');
+
 // если cdn недоступен, загружаем полифил локально
 const loadFile = (file, cb) => {
   let fileRef = document.createElement('script');

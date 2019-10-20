@@ -58,6 +58,10 @@ body {
   }
 }
 
+.no-js .lazyload {
+  display: none;
+}
+
 @keyframes pulse {
   from {
     transform: scale3d(1, 1, 1);
@@ -118,11 +122,13 @@ body {
 @keyframes jump {
   from {
     bottom: 0;
+
     opacity: 1;
   }
 
   to {
     bottom: -6px;
+
     opacity: 0;
   }
 }

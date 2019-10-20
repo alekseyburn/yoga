@@ -1,7 +1,7 @@
 .team {
   position: relative;
 
-  padding: 0 $mobile-indent + 11px 62px;
+  padding: 0 $mobile-indent + 11px 61px;
 
   background-image: url("../img/bg-team-patterns-mobile@1x.png");
   background-repeat: no-repeat;
@@ -20,14 +20,17 @@
 
 .team__list {
   @include reset-list;
-  overflow: hidden;
-  padding-top: 38px;
-  min-height: 455px;
+
   position: relative;
+
+  min-height: 455px;
+  padding-top: 37px;
+  overflow: hidden;
 }
 
 .team__item {
   position: absolute;
+
   width: 100%;
 }
 
@@ -63,7 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .team {
-    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 136px $tablet-indent;
 
     background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
@@ -80,8 +83,8 @@
   }
 
   .team__list {
-    margin-bottom: 1px;
     min-height: 380px;
+    margin-bottom: 1px;
   }
 
   .team__item {
@@ -187,9 +190,9 @@
 
   .team__list {
     width: 976px;
+    min-height: 593px;
     margin: 0 auto;
     padding-top: 56px;
-    min-height: 593px;
   }
 
   .team__column-left {
@@ -205,8 +208,9 @@
   }
 
   .team__buttons-wrapper {
-    margin: 0 auto;
     width: 156px;
+    margin: 0 auto;
+
     transform: translateX(-145px);
   }
 

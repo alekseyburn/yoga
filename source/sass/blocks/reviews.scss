@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 $mobile-indent 58px;
+  padding: 0 $mobile-indent 70px;
 }
 
 .reviews__title {
@@ -7,19 +7,21 @@
 }
 
 .reviews__list {
-  overflow: hidden;
-  padding-top: 38px;
-  min-height: 375px;
-  margin: 0 auto -30px;
   position: relative;
+
+  min-height: 338px;
+  margin: 0 auto;
+  padding-top: 38px;
+  overflow: hidden;
 }
 
 .reviews__item {
-  margin: 0 auto;
-  width: 100%;
-  flex-grow: 1;
   position: absolute;
-  padding: 60px 15px 30px;
+
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 15px 25px;
 
   background-color: $white;
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
@@ -49,26 +51,9 @@
   display: flex;
 }
 
-.reviews__picture {
-  position: relative;
-
-  flex-basis: 23.8%;
-  height: 0;
-  margin-right: 13px;
-  padding-bottom: 23.3%;
-  overflow: hidden;
-}
-
 .reviews__avatar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  flex-basis: 100%;
-  width: auto;
-  height: 101%;
-
-  transform: translate(-50%,-50%);
+  width: 80%;
+  margin-right: 13px;
 }
 
 .reviews__card-wrapper {
@@ -85,7 +70,7 @@
 }
 
 .reviews__date {
-  margin-bottom: 9px;
+  margin-bottom: 7px;
 
   color: rgba($main-text, 0.7);
 }
@@ -98,17 +83,19 @@
 }
 
 .reviews__slider-wrapper {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 106px;
   margin: 0 auto;
-  position: relative;
-  z-index: 2;
 }
 
 .reviews__counter {
   font-size: $font-size-m;
+  margin: 0;
 }
 
 .reviews__end {
@@ -125,13 +112,13 @@
   }
 
   .reviews__list {
-    margin-bottom: -10px;
     min-height: 410px;
+    margin-bottom: -10px;
   }
 
   .reviews__item {
     margin: 0 0 18px;
-    padding: 72px 55px 30px 87px;
+    padding: 72px 55px 25px 87px;
 
     &::before {
       top: 33px;
@@ -149,16 +136,12 @@
       margin-bottom: 22px;
     }
   }
-
-  .reviews__picture {
-    flex-basis: 17.4%;
-    padding-bottom: 17%;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
+
     width: 905px;
     margin: 0 auto;
     padding: 0 0 120px;
@@ -170,6 +153,7 @@
 
   .reviews__list {
     z-index: 1;
+
     width: 905px;
     margin: 0 auto;
   }
@@ -184,9 +168,9 @@
   }
 
   .reviews__slider-wrapper {
-    z-index: 2;
     position: absolute;
-    top: 43.5%;
+    top: 35%;
+    z-index: 2;
 
     width: 100%;
   }

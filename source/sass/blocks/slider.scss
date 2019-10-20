@@ -8,22 +8,24 @@
 
 .visible {
   opacity: 1;
-  //display: flex;
 }
 
 .non-visible {
-  opacity: 0;
   display: none;
+
+  opacity: 0;
 }
 
 .slideInLeft {
-  animation-name: animateInLeft;
   z-index: 1000;
+
+  animation-name: animateInLeft;
 }
 
 .slideInRight {
-  animation-name: animateInRight;
   z-index: 1000;
+
+  animation-name: animateInRight;
 }
 
 .slideOutLeft {

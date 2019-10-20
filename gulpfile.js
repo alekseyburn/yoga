@@ -11,6 +11,7 @@ const htmlmin = require('gulp-htmlmin');
 const csso = require('gulp-csso');
 const imagemin = require('gulp-imagemin');
 const mozjpeg = require('imagemin-mozjpeg');
+const pngquant = require('imagemin-pngquant');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const uglyfly = require('gulp-uglyfly');
@@ -23,7 +24,7 @@ const ghPages = require('gh-pages');
 const isProduction = process.env.NODE_ENV;
 
 gulp.task('html', () => gulp.src('source/**/*.html')
-  // .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest('build'))
   .pipe(server.stream()));
 
@@ -62,10 +63,14 @@ gulp.task('webp', () => gulp.src('source/img/**/*.{png,jpg}')
 
 gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
   .pipe(imagemin([
-    // imagemin.optipng({ optimizationLevel: 3 }),
-    // imagemin.jpegtran({ progressive: true }),
+    imagemin.jpegtran({ progressive: true }),
     imagemin.svgo(),
-    // mozjpeg({ quality: 80 }),
+    mozjpeg({ quality: 80 }),
+    pngquant({
+      quality: [0.5, 0.8],
+      floyd: 1,
+      speed: 1,
+    }),
   ]))
   .pipe(gulp.dest('build/img')));
 
