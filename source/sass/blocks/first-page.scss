@@ -26,6 +26,7 @@
   color: $white;
   text-transform: uppercase;
   letter-spacing: 0.25em;
+  word-break: break-all;
   text-shadow: 0 4px 50px rgba(131, 115, 161, 0.6);
 }
 
@@ -42,7 +43,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 50%;
     left: -1px;
 
     width: 30px;
@@ -53,6 +54,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 5px 10px;
+    transform: translateY(-50%);
   }
 
   &:active {
@@ -132,8 +134,6 @@
     transition: color 0.3s ease-out, text-shadow 0.5s ease-out;
 
     &::before {
-      top: -5px;
-
       width: 56px;
       height: 48px;
 
@@ -149,7 +149,7 @@
       content: "";
       position: absolute;
       right: 260px;
-      bottom: -1px;
+      bottom: -3px;
       left: 0;
       z-index: 2;
 

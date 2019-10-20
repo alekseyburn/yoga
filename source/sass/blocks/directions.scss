@@ -33,14 +33,17 @@
 
 .directions__img {
   display: block;
+
   background-color: rgb(78, 78, 78);
+
   object-fit: cover;
 }
 
 .directions__info-wrapper {
+  position: relative;
+
   width: 100%;
   padding: 16px 20px 15px;
-  position: relative;
 
   background-color: $white;
 }
@@ -65,11 +68,12 @@
 }
 
 .directions__link {
-  width: 17%;
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
-  top: 0;
+
+  width: 17%;
 }
 
 .directions__link-more {
@@ -98,22 +102,23 @@
   }
 
   .directions__list {
-    flex-basis: 57%;
     display: flex;
+    flex-basis: 57%;
     flex-direction: column;
   }
 
   .directions__item {
     position: relative;
-    flex-direction: row;
 
+    flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 19px;
 
     &--main {
-      flex-direction: column;
       flex-basis: 39.2%;
+      flex-direction: column;
       margin-bottom: 0;
+
       background-color: $white;
     }
 
@@ -122,15 +127,46 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
       margin-top: auto;
+      margin-bottom: 0;
     }
   }
 
+  .directions__picture-wrapper {
+    position: relative;
+
+    width: 42%;
+    padding-bottom: 34%;
+    overflow: hidden;
+  }
+
+  .directions__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    min-height: 100%;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: fill;
+
+    &--main {
+      position: static;
+      top: auto;
+      left: auto;
+
+      width: 100%;
+      height: auto;
+
+      transform: none;
+    }
+  }
   .directions__info-wrapper {
-    width: 58%;
     flex-grow: 1;
-    padding: 19px 19px 17px;
+    width: 58%;
+    padding: 19px 45px 17px 19px;
 
     &--main {
       width: 100%;
@@ -150,16 +186,16 @@
 
   .directions__link {
     position: absolute;
+    top: auto;
     right: 24px;
     bottom: 27px;
-    top: auto;
 
     width: 30px;
 
     &--main {
+      top: 0;
       right: 0;
       bottom: 0;
-      top: 0;
 
       width: 17%;
     }
@@ -210,8 +246,8 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
       margin-top: 0;
+      margin-bottom: 0;
     }
 
     &--main {
@@ -219,13 +255,9 @@
     }
   }
 
-  .directions__img {
-    flex-basis: 41.9%;
-  }
-
   .directions__info-wrapper {
     width: 305px;
-    padding: 33px 35px 32px;
+    padding: 33px 80px 32px 35px;
 
     &--main {
       width: 100%;
@@ -271,9 +303,9 @@
     width: 45px;
 
     &--main {
+      top: 0;
       right: 0;
       bottom: 0;
-      top: 0;
 
       width: 17%;
     }

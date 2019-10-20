@@ -56,7 +56,7 @@
     <section class="directions section">
       <h2 class="directions__title section__title">Направления</h2>
       <div class="directions__item directions__item--main">
-        <picture class="directions__picture directions__picture--main">
+        <picture>
           <source type="image/webp" media="(min-width: 1150px)"
                   data-srcset="img/img-hatha-yoga-desktop@1x.webp 1x, img/img-hatha-yoga-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
@@ -72,7 +72,7 @@
                data-srcset="img/img-hatha-yoga-mobile@2x.jpg 2x" alt="Хатха-йога" loading="lazy">
         </picture>
         <noscript>
-          <picture class="directions__picture directions__picture--main">
+          <picture>
             <source type="image/webp" media="(min-width: 1150px)"
                     srcset="img/img-hatha-yoga-desktop@1x.webp 1x, img/img-hatha-yoga-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
@@ -96,42 +96,43 @@
           <a class="directions__link directions__link--main button button--right" href="#"
              aria-label="Записаться на занятие"></a>
         </div>
-
       </div>
       <ul class="directions__list">
         <li class="directions__item">
-          <picture class="directions__picture">
-            <source type="image/webp" media="(min-width: 1150px)"
-                    data-srcset="img/img-ashatanga-yoga-desktop@1x.webp 1x, img/img-ashatanga-yoga-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-                    data-srcset="img/img-ashatanga-yoga-tablet@1x.webp 1x, img/img-ashatanga-yoga-tablet@2x.webp 2x">
-            <source type="image/webp"
-                    data-srcset="img/img-ashatanga-yoga-mobile@1x.webp 1x, img/img-ashatanga-yoga-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1150px)"
-                    data-srcset="img/img-ashatanga-yoga-desktop@1x.jpg 1x, img/img-ashatanga-yoga-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                    data-srcset="img/img-ashatanga-yoga-tablet@1x.jpg 1x, img/img-ashatanga-yoga-tablet@2x.jpg 2x">
-            <img class="directions__img lazyload" data-src="img/img-ashatanga-yoga-mobile@1x.jpg"
-                 data-srcset="img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
-          </picture>
-          <noscript>
-            <picture class="directions__picture">
+          <div class="directions__picture-wrapper">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="img/img-ashatanga-yoga-desktop@1x.webp 1x, img/img-ashatanga-yoga-desktop@2x.webp 2x">
+                      data-srcset="img/img-ashatanga-yoga-desktop@1x.webp 1x, img/img-ashatanga-yoga-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/img-ashatanga-yoga-tablet@1x.webp 1x, img/img-ashatanga-yoga-tablet@2x.webp 2x">
+                      data-srcset="img/img-ashatanga-yoga-tablet@1x.webp 1x, img/img-ashatanga-yoga-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="img/img-ashatanga-yoga-mobile@1x.webp 1x, img/img-ashatanga-yoga-mobile@2x.webp 2x">
+                      data-srcset="img/img-ashatanga-yoga-mobile@1x.webp 1x, img/img-ashatanga-yoga-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="img/img-ashatanga-yoga-desktop@1x.jpg 1x, img/img-ashatanga-yoga-desktop@2x.jpg 2x">
+                      data-srcset="img/img-ashatanga-yoga-desktop@1x.jpg 1x, img/img-ashatanga-yoga-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="img/img-ashatanga-yoga-tablet@1x.jpg 1x, img/img-ashatanga-yoga-tablet@2x.jpg 2x">
-              <img class="directions__img" src="img/img-ashatanga-yoga-mobile@1x.jpg"
-                   srcset="img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
+                      data-srcset="img/img-ashatanga-yoga-tablet@1x.jpg 1x, img/img-ashatanga-yoga-tablet@2x.jpg 2x">
+              <img class="directions__img lazyload" data-src="img/img-ashatanga-yoga-mobile@1x.jpg"
+                   data-srcset="img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
             </picture>
-          </noscript>
+            <noscript>
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="img/img-ashatanga-yoga-desktop@1x.webp 1x, img/img-ashatanga-yoga-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/img-ashatanga-yoga-tablet@1x.webp 1x, img/img-ashatanga-yoga-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="img/img-ashatanga-yoga-mobile@1x.webp 1x, img/img-ashatanga-yoga-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="img/img-ashatanga-yoga-desktop@1x.jpg 1x, img/img-ashatanga-yoga-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/img-ashatanga-yoga-tablet@1x.jpg 1x, img/img-ashatanga-yoga-tablet@2x.jpg 2x">
+                <img class="directions__img" src="img/img-ashatanga-yoga-mobile@1x.jpg"
+                     srcset="img/img-ashatanga-yoga-mobile@2x.jpg 2x" alt="Ашатанга-йога" loading="lazy">
+              </picture>
+            </noscript>
+          </div>
           <div class="directions__info-wrapper">
             <h3 class="directions__name">Ашатанга-йога</h3>
             <p class="directions__days">Пн, Ср, Пт – с 11:00 до 14:00</p>
@@ -142,38 +143,40 @@
           </div>
         </li>
         <li class="directions__item">
-          <picture class="directions__picture">
-            <source type="image/webp" media="(min-width: 1150px)"
-                    data-srcset="img/img-cundalini-yoga-desktop@1x.webp 1x, img/img-cundalini-yoga-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-                    data-srcset="img/img-cundalini-yoga-tablet@1x.webp 1x, img/img-cundalini-yoga-tablet@2x.webp 2x">
-            <source type="image/webp"
-                    data-srcset="img/img-cundalini-yoga-mobile@1x.webp 1x, img/img-cundalini-yoga-mobile@2x.webp 2x">
-
-            <source media="(min-width: 1150px)"
-                    data-srcset="img/img-cundalini-yoga-desktop@1x.jpg 1x, img/img-cundalini-yoga-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-                    data-srcset="img/img-cundalini-yoga-tablet@1x.jpg 1x, img/img-cundalini-yoga-tablet@2x.jpg 2x">
-            <img class="directions__img lazyload" data-src="img/img-cundalini-yoga-mobile@1x.jpg"
-                 data-srcset="img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
-          </picture>
-          <noscript>
-            <picture class="directions__picture">
+          <div class="directions__picture-wrapper">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
-                      srcset="img/img-cundalini-yoga-desktop@1x.webp 1x, img/img-cundalini-yoga-desktop@2x.webp 2x">
+                      data-srcset="img/img-cundalini-yoga-desktop@1x.webp 1x, img/img-cundalini-yoga-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/img-cundalini-yoga-tablet@1x.webp 1x, img/img-cundalini-yoga-tablet@2x.webp 2x">
+                      data-srcset="img/img-cundalini-yoga-tablet@1x.webp 1x, img/img-cundalini-yoga-tablet@2x.webp 2x">
               <source type="image/webp"
-                      srcset="img/img-cundalini-yoga-mobile@1x.webp 1x, img/img-cundalini-yoga-mobile@2x.webp 2x">
+                      data-srcset="img/img-cundalini-yoga-mobile@1x.webp 1x, img/img-cundalini-yoga-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)"
-                      srcset="img/img-cundalini-yoga-desktop@1x.jpg 1x, img/img-cundalini-yoga-desktop@2x.jpg 2x">
+                      data-srcset="img/img-cundalini-yoga-desktop@1x.jpg 1x, img/img-cundalini-yoga-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                      srcset="img/img-cundalini-yoga-tablet@1x.jpg 1x, img/img-cundalini-yoga-tablet@2x.jpg 2x">
-              <img class="directions__img" src="img/img-cundalini-yoga-mobile@1x.jpg"
-                   srcset="img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
+                      data-srcset="img/img-cundalini-yoga-tablet@1x.jpg 1x, img/img-cundalini-yoga-tablet@2x.jpg 2x">
+              <img class="directions__img lazyload" data-src="img/img-cundalini-yoga-mobile@1x.jpg"
+                   data-srcset="img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
             </picture>
-          </noscript>
+            <noscript>
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                        srcset="img/img-cundalini-yoga-desktop@1x.webp 1x, img/img-cundalini-yoga-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/img-cundalini-yoga-tablet@1x.webp 1x, img/img-cundalini-yoga-tablet@2x.webp 2x">
+                <source type="image/webp"
+                        srcset="img/img-cundalini-yoga-mobile@1x.webp 1x, img/img-cundalini-yoga-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1150px)"
+                        srcset="img/img-cundalini-yoga-desktop@1x.jpg 1x, img/img-cundalini-yoga-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                        srcset="img/img-cundalini-yoga-tablet@1x.jpg 1x, img/img-cundalini-yoga-tablet@2x.jpg 2x">
+                <img class="directions__img" src="img/img-cundalini-yoga-mobile@1x.jpg"
+                     srcset="img/img-cundalini-yoga-mobile@2x.jpg 2x" alt="Кундалини-йога" loading="lazy">
+              </picture>
+            </noscript>
+          </div>
           <div class="directions__info-wrapper">
             <h3 class="directions__name">Кундалини-йога</h3>
             <p class="directions__days">Пн, Ср, Пт – с 12:00 до 15:00</p>
@@ -239,7 +242,7 @@
           <div class="team__column-left">
             <ul class="team__cards-list">
               <li class="team__cards-item card card--hatha">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -255,7 +258,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -302,7 +305,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -318,7 +321,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -365,7 +368,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -381,7 +384,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -451,7 +454,7 @@
           <div class="team__column-left">
             <ul class="team__cards-list">
               <li class="team__cards-item card card--hatha">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -467,7 +470,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -514,7 +517,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -530,7 +533,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -577,7 +580,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -593,7 +596,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -663,7 +666,7 @@
           <div class="team__column-left">
             <ul class="team__cards-list">
               <li class="team__cards-item card card--hatha">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -679,7 +682,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -726,7 +729,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -742,7 +745,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -789,7 +792,7 @@
                 </div>
               </li>
               <li class="team__cards-item card">
-                <picture class="card__picture">
+                <picture>
                   <source type="image/webp" media="(min-width: 1150px)"
                           data-srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -805,7 +808,7 @@
                        data-srcset="img/img-sergey-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
                 </picture>
                 <noscript>
-                  <picture class="card__picture">
+                  <picture>
                     <source type="image/webp" media="(min-width: 1150px)"
                             srcset="img/img-sergey-desktop@1x.webp 1x, img/img-sergey-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)"
@@ -892,7 +895,7 @@
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
             Марине.</p>
           <div class="reviews__wrapper">
-            <picture class="reviews__picture">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                       data-srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -908,7 +911,7 @@
                    data-srcset="img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
             <noscript>
-              <picture class="reviews__picture">
+              <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                         srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
@@ -956,7 +959,7 @@
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
             Марине.</p>
           <div class="reviews__wrapper">
-            <picture class="reviews__picture">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                       data-srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -972,7 +975,7 @@
                    data-srcset="img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
             <noscript>
-              <picture class="reviews__picture">
+              <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                         srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
@@ -1020,7 +1023,7 @@
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
             Марине.</p>
           <div class="reviews__wrapper">
-            <picture class="reviews__picture">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                       data-srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1036,7 +1039,7 @@
                    data-srcset="img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
             <noscript>
-              <picture class="reviews__picture">
+              <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                         srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
@@ -1084,7 +1087,7 @@
           <p class="reviews__text">Йога это отличный способ быстро и&nbsp;качественно&nbsp;расслабиться. Спасибо&nbsp;инструктору
             Марине.</p>
           <div class="reviews__wrapper">
-            <picture class="reviews__picture">
+            <picture>
               <source type="image/webp" media="(min-width: 1150px)"
                       data-srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
@@ -1100,7 +1103,7 @@
                    data-srcset="img/img-serg-mobile@2x.jpg 2x" alt="Серёжа Попов" loading="lazy">
             </picture>
             <noscript>
-              <picture class="reviews__picture">
+              <picture>
                 <source type="image/webp" media="(min-width: 1150px)"
                         srcset="img/img-serg-desktop@1x.webp 1x, img/img-serg-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
