@@ -1,16 +1,30 @@
 .team {
   position: relative;
 
-  padding: 0 $mobile-indent + 11px 62px;
+  padding: 0 $mobile-indent + 11px 61px;
 
-  background-image: url("../img/bg-team-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -6%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-team-patterns-mobile@2x.png");
     background-position: left -19px;
     background-size: contain;
+  }
+}
+
+.no-webp .team {
+  background-image: url("../img/bg-team-patterns-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-team-patterns-mobile@2x.png");
+  }
+}
+
+.webp .team {
+  background-image: url("../img/bg-team-patterns-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-team-patterns-mobile@2x.webp");
   }
 }
 
@@ -20,14 +34,17 @@
 
 .team__list {
   @include reset-list;
-  overflow: hidden;
-  padding-top: 38px;
-  min-height: 455px;
+
   position: relative;
+
+  min-height: 455px;
+  padding-top: 37px;
+  overflow: hidden;
 }
 
 .team__item {
   position: absolute;
+
   width: 100%;
 }
 
@@ -63,15 +80,26 @@
 
 @media (min-width: $tablet-width) {
   .team {
-    padding: 0 $tablet-indent - 11px 137px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 136px $tablet-indent;
 
-    background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 19%;
     background-size: contain;
+  }
+
+  .no-webp .team {
+    background-image: url("../img/bg-team-patterns-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-team-patterns-tablet@2x.png");
+    }
+  }
+
+  .webp .team {
+    background-image: url("../img/bg-team-patterns-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-team-patterns-tablet@2x.webp");
     }
   }
 
@@ -80,8 +108,8 @@
   }
 
   .team__list {
-    margin-bottom: 1px;
     min-height: 380px;
+    margin-bottom: 1px;
   }
 
   .team__item {
@@ -150,14 +178,9 @@
   .team {
     padding: 0 $desktop-indent - 43px 141px $desktop-indent - 43px;
 
-    background-image: url("../img/bg-subs-patterns-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 94% 5%;
     background-size: 41%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-subs-patterns-desktop@2x.png");
-    }
 
     &::after {
       content: "";
@@ -169,13 +192,40 @@
       width: 100%;
       height: 1326px;
 
-      background-image: url("../img/bg-team-patterns-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 1084px;
+    }
+  }
+
+  .no-webp .team {
+    background-image: url("../img/bg-subs-patterns-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-patterns-desktop@2x.png");
+    }
+
+    &::after {
+      background-image: url("../img/bg-team-patterns-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-team-patterns-desktop@2x.png");
+      }
+    }
+  }
+
+  .webp .team {
+    background-image: url("../img/bg-subs-patterns-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-patterns-desktop@2x.webp");
+    }
+
+    &::after {
+      background-image: url("../img/bg-team-patterns-desktop@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-team-patterns-desktop@2x.webp");
       }
     }
   }
@@ -187,9 +237,9 @@
 
   .team__list {
     width: 976px;
+    min-height: 593px;
     margin: 0 auto;
     padding-top: 56px;
-    min-height: 593px;
   }
 
   .team__column-left {
@@ -205,8 +255,9 @@
   }
 
   .team__buttons-wrapper {
-    margin: 0 auto;
     width: 156px;
+    margin: 0 auto;
+
     transform: translateX(-145px);
   }
 

@@ -1,12 +1,24 @@
 .record {
   padding: 62px $mobile-indent 70px;
 
-  background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
+  background-color: $light-bg;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.no-webp .record {
+  background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-footer-clouds-mobile@2x.jpg");
+  }
+}
+
+.webp .record {
+  background-image: url("../img/bg-footer-clouds-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-footer-clouds-mobile@2x.webp");
   }
 }
 
@@ -20,11 +32,21 @@
 @media (min-width: $tablet-width) {
   .record {
     padding: 69px 179px 69px 182px;
+  }
 
+  .no-webp .record {
     background-image: url("../img/bg-footer-clouds-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-footer-clouds-tablet@2x.jpg");
+    }
+  }
+
+  .webp .record {
+    background-image: url("../img/bg-footer-clouds-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-footer-clouds-tablet@2x.webp");
     }
   }
 
@@ -40,6 +62,14 @@
   .record {
     padding: 0;
 
+    background-color: transparent;
+  }
+
+  .no-webp .record {
+    background-image: none;
+  }
+
+  .webp .record {
     background-image: none;
   }
 

@@ -3,14 +3,26 @@
 
   display: flex;
   flex-direction: column;
-  padding: 0 $mobile-indent 8px;
+  padding: 0 $mobile-indent 7px;
 
-  background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 145px;
+}
+
+.no-webp .directions {
+  background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-yoga-patterns-mobile@2x.png");
+    background-size: 216px 494px;
+  }
+}
+
+.webp .directions {
+  background-image: url("../img/bg-yoga-patterns-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-yoga-patterns-mobile@2x.webp");
     background-size: 216px 494px;
   }
 }
@@ -25,37 +37,24 @@
 
 .directions__item {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 30px;
 
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 }
 
-.directions__picture {
-  position: relative;
-
-  width: 100%;
-  height: 0;
-  padding-bottom: 80%;
-  overflow: hidden;
+.directions__img {
+  display: block;
 
   background-color: rgb(78, 78, 78);
-}
 
-.directions__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  flex-basis: 100%;
-  width: auto;
-  height: 101%;
-
-  transform: translate(-50%,-50%);
+  object-fit: cover;
 }
 
 .directions__info-wrapper {
-  width: 83%;
+  position: relative;
+
+  width: 100%;
   padding: 16px 20px 15px;
 
   background-color: $white;
@@ -81,6 +80,11 @@
 }
 
 .directions__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
   width: 17%;
 }
 
@@ -93,13 +97,25 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 $tablet-indent - 11px 118px $tablet-indent;
+    padding: 0 $tablet-indent - 11px 120px $tablet-indent;
 
-    background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
     background-position: left -20px;
+  }
+
+  .no-webp .directions {
+    background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-yoga-patterns-tablet@2x.png");
+      background-size: 693px 397px;
+    }
+  }
+
+  .webp .directions {
+    background-image: url("../img/bg-yoga-patterns-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-tablet@2x.webp");
       background-size: 693px 397px;
     }
   }
@@ -110,56 +126,75 @@
   }
 
   .directions__list {
+    display: flex;
     flex-basis: 57%;
+    flex-direction: column;
   }
 
   .directions__item {
     position: relative;
 
+    flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 19px;
 
     &--main {
-      flex-basis: 39.7%;
-      flex-wrap: wrap;
+      flex-basis: 39.2%;
+      flex-direction: column;
       margin-bottom: 0;
+
+      background-color: $white;
     }
 
     &:nth-last-child(2):not(.directions__item--main) {
-      margin-bottom: 39px;
+      margin-bottom: 35px;
     }
 
     &:last-child {
+      margin-top: auto;
       margin-bottom: 0;
     }
   }
 
-  .directions__picture {
-    width: 42%;
-    height: auto;
-    padding-bottom: 34%;
+  .directions__picture-wrapper {
+    position: relative;
 
-    &--main {
-      width: 100%;
-      padding-bottom: 84%;
-    }
+    width: 42%;
+    padding-bottom: 34%;
+    overflow: hidden;
   }
 
   .directions__img {
-    &--main {
-      top: 55%;
-      left: 52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-      height: 110%;
+    width: auto;
+    min-height: 100%;
+
+    transform: translate(-50%, -50%);
+
+    object-fit: fill;
+
+    &--main {
+      position: static;
+      top: auto;
+      left: auto;
+
+      width: 100%;
+      height: auto;
+
+      transform: none;
     }
   }
-
   .directions__info-wrapper {
+    flex-grow: 1;
     width: 58%;
-    padding: 19px 21px 16px;
+    padding: 19px 45px 17px 19px;
 
     &--main {
-      width: 83%;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -175,15 +210,16 @@
 
   .directions__link {
     position: absolute;
+    top: auto;
     right: 24px;
-    bottom: 24px;
+    bottom: 27px;
 
     width: 30px;
 
     &--main {
-      position: static;
-      right: auto;
-      bottom: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
 
       width: 17%;
     }
@@ -192,7 +228,7 @@
   .directions__link-more {
     display: block;
     flex-basis: 100%;
-    padding: 9px 9px 9px 0;
+    padding: 10px 9px 7px 0;
 
     text-align: center;
     color: $main-text;
@@ -206,10 +242,17 @@
   .directions {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 $desktop-indent 123px $desktop-indent - 35px;
+    padding: 0 $desktop-indent 125px $desktop-indent - 35px;
 
-    background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
     background-position: 58% -61px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    }
+  }
+
+  .no-webp .directions {
+    background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-yoga-patterns-desktop@2x.png");
@@ -217,9 +260,22 @@
     }
   }
 
+  .webp .directions {
+    background-image: url("../img/bg-yoga-patterns-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-desktop@2x.webp");
+      background-size: 1257px 722px;
+    }
+  }
+
   .directions__title {
     margin-bottom: 67px;
     margin-left: 30px;
+  }
+
+  .directions__list {
+    flex-basis: 56.8%;
   }
 
   .directions__item {
@@ -230,33 +286,21 @@
     }
 
     &:last-child {
+      margin-top: 0;
       margin-bottom: 0;
     }
-  }
-
-  .directions__picture {
-    &--main {
-      padding-bottom: 85%;
-    }
-  }
-
-  .directions__img {
-    flex-basis: 41.9%;
 
     &--main {
-      top: 50%;
-      left: 50%;
-
-      height: 101%;
+      flex-basis: 39.5%;
     }
   }
 
   .directions__info-wrapper {
     width: 305px;
-    padding: 33px 35px 32px;
+    padding: 33px 80px 32px 35px;
 
     &--main {
-      width: 83%;
+      width: 100%;
       padding: 42px 46px 25px;
     }
   }
@@ -299,8 +343,9 @@
     width: 45px;
 
     &--main {
-      right: auto;
-      bottom: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
 
       width: 17%;
     }
