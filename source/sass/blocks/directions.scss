@@ -5,12 +5,24 @@
   flex-direction: column;
   padding: 0 $mobile-indent 7px;
 
-  background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 145px;
+}
+
+.no-webp .directions {
+  background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-yoga-patterns-mobile@2x.png");
+    background-size: 216px 494px;
+  }
+}
+
+.webp .directions {
+  background-image: url("../img/bg-yoga-patterns-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-yoga-patterns-mobile@2x.webp");
     background-size: 216px 494px;
   }
 }
@@ -87,11 +99,23 @@
     justify-content: space-between;
     padding: 0 $tablet-indent - 11px 120px $tablet-indent;
 
-    background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
     background-position: left -20px;
+  }
+
+  .no-webp .directions {
+    background-image: url("../img/bg-yoga-patterns-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-yoga-patterns-tablet@2x.png");
+      background-size: 693px 397px;
+    }
+  }
+
+  .webp .directions {
+    background-image: url("../img/bg-yoga-patterns-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-tablet@2x.webp");
       background-size: 693px 397px;
     }
   }
@@ -220,11 +244,27 @@
     margin: 0 auto;
     padding: 0 $desktop-indent 125px $desktop-indent - 35px;
 
-    background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
     background-position: 58% -61px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    }
+  }
+
+  .no-webp .directions {
+    background-image: url("../img/bg-yoga-patterns-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-yoga-patterns-desktop@2x.png");
+      background-size: 1257px 722px;
+    }
+  }
+
+  .webp .directions {
+    background-image: url("../img/bg-yoga-patterns-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-yoga-patterns-desktop@2x.webp");
       background-size: 1257px 722px;
     }
   }

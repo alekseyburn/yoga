@@ -3,15 +3,9 @@
 
   padding: 0 $mobile-indent 68px;
 
-  background-image: url("../img/bg-subs-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 107%;
   background-size: 100%;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-subs-patterns-mobile@2x.png");
-    background-size: 307px 274px;
-  }
 
   &::after {
     content: "";
@@ -23,13 +17,42 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("../img/bg-subs-clouds-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+.no-webp .subscriptions {
+  background-image: url("../img/bg-subs-patterns-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-subs-patterns-mobile@2x.png");
+    background-size: 307px 274px;
+  }
+
+  &::after {
+    background-image: url("../img/bg-subs-clouds-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-subs-clouds-mobile@2x.png");
+    }
+  }
+}
+
+.webp .subscriptions {
+  background-image: url("../img/bg-subs-patterns-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-subs-patterns-mobile@2x.webp");
+    background-size: 307px 274px;
+  }
+
+  &::after {
+    background-image: url("../img/bg-subs-clouds-mobile@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-clouds-mobile@2x.webp");
     }
   }
 }
@@ -96,18 +119,38 @@
   .subscriptions {
     padding: 0 $tablet-indent - 11px 108px $tablet-indent;
 
-    background-image: none;
-
     &::after {
       top: -295px;
 
       height: 1000px;
 
-      background-image: url("../img/bg-subs-clouds-tablet@1x.png");
       background-size: 100%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      }
+    }
+  }
+
+  .no-webp .subscriptions {
+    background-image: none;
+
+    &::after {
+      background-image: url("../img/bg-subs-clouds-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-subs-clouds-tablet@2x.png");
+      }
+    }
+  }
+
+  .webp .subscriptions {
+    background-image: none;
+
+    &::after {
+      background-image: url("../img/bg-subs-clouds-tablet@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-subs-clouds-tablet@2x.webp");
       }
     }
   }
@@ -187,11 +230,29 @@
 
       height: 1000px;
 
-      background-image: url("../img/bg-subs-clouds-desktop@1x.png");
       background-size: 100%;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      }
+    }
+  }
+
+  .no-webp .subscriptions {
+    &::after {
+      background-image: url("../img/bg-subs-clouds-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-subs-clouds-desktop@2x.png");
+      }
+    }
+  }
+
+  .webp .subscriptions {
+    &::after {
+      background-image: url("../img/bg-subs-clouds-desktop@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-subs-clouds-desktop@2x.webp");
       }
     }
   }

@@ -60,12 +60,23 @@
     overflow-x: hidden;
 
     background-color: $light-bg;
-    background-image: url("../img/bg-footer-clouds-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .no-webp .page-footer {
+    background-image: url("../img/bg-footer-clouds-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-footer-clouds-desktop@2x.jpg");
+    }
+  }
+
+  .webp .page-footer {
+    background-image: url("../img/bg-footer-clouds-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-footer-clouds-desktop@2x.webp");
     }
   }
 

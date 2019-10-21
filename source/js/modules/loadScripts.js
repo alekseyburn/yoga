@@ -1,5 +1,12 @@
 document.querySelector('html').classList.remove('no-js');
 
+document.addEventListener('DOMContentLoaded', () => {
+  if ((/Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor)) || /Trident.*rv:/.test(navigator.userAgent)) {
+    document.querySelector('body').classList.remove('webp');
+    document.querySelector('body').classList.add('no-webp');
+  }
+});
+
 // если cdn недоступен, загружаем полифил локально
 const loadFile = (file, cb) => {
   let fileRef = document.createElement('script');

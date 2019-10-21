@@ -11,9 +11,16 @@
   padding-top: 18px;
   overflow: hidden;
 
-  background-image: url("../img/img-slogan-mobile@1x.png");
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+.no-webp .first-page__slogan {
+  background-image: url("../img/img-slogan-mobile@1x.png");
+}
+
+.webp .first-page__slogan {
+  background-image: url("../img/img-slogan-mobile@1x.webp");
 }
 
 .first-page__title {
@@ -75,8 +82,14 @@
     margin-right: 140px;
     margin-bottom: 10px;
     padding-top: 23px;
+  }
 
+  .no-webp .first-page__slogan {
     background-image: url("../img/img-slogan-tablet@1x.png");
+  }
+
+  .webp .first-page__slogan {
+    background-image: url("../img/img-slogan-tablet@1x.webp");
   }
 
   .first-page__title {
@@ -111,8 +124,14 @@
     margin-right: 250px;
     margin-bottom: 49px;
     padding-top: 42px;
+  }
 
+  .no-webp .first-page__slogan {
     background-image: url("../img/img-slogan-desktop@1x.png");
+  }
+
+  .webp .first-page__slogan {
+    background-image: url("../img/img-slogan-desktop@1x.webp");
   }
 
   .first-page__title {

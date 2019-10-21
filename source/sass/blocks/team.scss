@@ -3,14 +3,28 @@
 
   padding: 0 $mobile-indent + 11px 61px;
 
-  background-image: url("../img/bg-team-patterns-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 -6%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-team-patterns-mobile@2x.png");
     background-position: left -19px;
     background-size: contain;
+  }
+}
+
+.no-webp .team {
+  background-image: url("../img/bg-team-patterns-mobile@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-team-patterns-mobile@2x.png");
+  }
+}
+
+.webp .team {
+  background-image: url("../img/bg-team-patterns-mobile@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-team-patterns-mobile@2x.webp");
   }
 }
 
@@ -68,13 +82,24 @@
   .team {
     padding: 0 $tablet-indent - 11px 136px $tablet-indent;
 
-    background-image: url("../img/bg-team-patterns-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 0 19%;
     background-size: contain;
+  }
+
+  .no-webp .team {
+    background-image: url("../img/bg-team-patterns-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-team-patterns-tablet@2x.png");
+    }
+  }
+
+  .webp .team {
+    background-image: url("../img/bg-team-patterns-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-team-patterns-tablet@2x.webp");
     }
   }
 
@@ -153,14 +178,9 @@
   .team {
     padding: 0 $desktop-indent - 43px 141px $desktop-indent - 43px;
 
-    background-image: url("../img/bg-subs-patterns-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 94% 5%;
     background-size: 41%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-subs-patterns-desktop@2x.png");
-    }
 
     &::after {
       content: "";
@@ -172,13 +192,40 @@
       width: 100%;
       height: 1326px;
 
-      background-image: url("../img/bg-team-patterns-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 1084px;
+    }
+  }
+
+  .no-webp .team {
+    background-image: url("../img/bg-subs-patterns-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-patterns-desktop@2x.png");
+    }
+
+    &::after {
+      background-image: url("../img/bg-team-patterns-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg-team-patterns-desktop@2x.png");
+      }
+    }
+  }
+
+  .webp .team {
+    background-image: url("../img/bg-subs-patterns-desktop@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-subs-patterns-desktop@2x.webp");
+    }
+
+    &::after {
+      background-image: url("../img/bg-team-patterns-desktop@1x.webp");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-team-patterns-desktop@2x.webp");
       }
     }
   }
