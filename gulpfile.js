@@ -77,6 +77,7 @@ gulp.task('images', () => gulp.src('source/img/**/*.{png,jpg,svg}')
 gulp.task('js', () => gulp.src('source/js/modules/**/*.js')
   .pipe(order([
     'loadScripts.js',
+    'lazyload.js',
     '*.js',
   ]))
   .pipe(concat('script.js'))
