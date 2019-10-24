@@ -15,6 +15,14 @@
   background-position-x: center;
 }
 
+.no-webp .lazy.first-page__slogan {
+  background-image: none;
+}
+
+.webp .lazy.first-page__slogan {
+  background-image: none;
+}
+
 .no-webp .first-page__slogan {
   background-image: url("../img/img-slogan-mobile@1x.png");
 }

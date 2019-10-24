@@ -78,7 +78,10 @@ gulp.task('js', () => gulp.src('source/js/modules/**/*.js')
   .pipe(order([
     'loadScripts.js',
     'lazyload.js',
-    '*.js',
+    'slider.js',
+    'tilt.js',
+    'form.js',
+    'animation.js',
   ]))
   .pipe(concat('script.js'))
   .pipe(babel({ presets: ['@babel/preset-env'] }))

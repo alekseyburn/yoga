@@ -6,6 +6,14 @@
   background-size: cover;
 }
 
+.no-webp .lazy.record {
+  background-image: none;
+}
+
+.webp .lazy.record {
+  background-image: none;
+}
+
 .no-webp .record {
   background-image: url("../img/bg-footer-clouds-mobile@1x.jpg");
 

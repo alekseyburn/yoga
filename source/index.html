@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <title>Занятия йогой</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Geometria-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" defer="defer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" defer="defer"></script>
@@ -13,7 +16,7 @@
   <script src="js/script.min.js" defer="defer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" async="async"></script>
 </head>
-<body class="webp">
+<body class="webp lazy">
   <header class="page-header section">
     <button class="page-header__toggle" type="button" aria-label="Открыть\закрыть меню">
       <svg class="page-header__svg" width="30" height="15">
@@ -22,7 +25,7 @@
       Меню
     </button>
     <a class="page-header__phone" href="tel:88126901010" target="_blank" rel="noreferrer noopener">8 (812) 690-10-10</a>
-    <section class="first-page">
+    <section class="first-page lazy">
       <p class="first-page__slogan">Почувствуй расслабление в своем теле</p>
       <h1 class="first-page__title">YOGA</h1>
       <a class="first-page__link" href="#">Запишитесь на бесплатное пробное занятие</a>
@@ -56,7 +59,7 @@
     </section>
   </header>
   <main>
-    <section class="directions section">
+    <section class="directions section lazy">
       <h2 class="directions__title section__title">Направления</h2>
       <div class="directions__item directions__item--main">
         <picture>
@@ -194,7 +197,7 @@
         </li>
       </ul>
     </section>
-    <section class="subscriptions section">
+    <section class="subscriptions section lazy">
       <h2 class="subscriptions__title section__title">Абонементы</h2>
       <form class="subscriptions__form month-select" method="GET">
         <input class="month-select__input visually-hidden" id="radio1" type="radio" name="months" value="1 месяц"
@@ -238,7 +241,7 @@
         </li>
       </ul>
     </section>
-    <section class="team section">
+    <section class="team section lazy">
       <h2 class="team__title section__title">Наша команда</h2>
       <ul class="team__list slider-js">
         <li class="team__item slide-js active">
@@ -1158,9 +1161,9 @@
                 aria-label="Следующий комментарий"></button>
       </div>
     </section>
-    <footer class="page-footer">
+    <footer class="page-footer lazy">
       <div class="page-footer__wrapper">
-        <section class="page-footer__record record">
+        <section class="page-footer__record record lazy">
           <h2 class="record__title">Запишитесь&nbsp;на&nbsp;бесплатное пробное занятие</h2>
           <form class="form" method="POST" action="https://echo.htmlacademy.ru">
             <label class="form__label input-data">

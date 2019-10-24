@@ -33,6 +33,14 @@ body {
   background-size: contain;
 }
 
+.no-webp.lazy {
+  background-image: none;
+}
+
+.webp.lazy {
+  background-image: none;
+}
+
 .no-webp {
   background-image: url("../img/bg-clouds-mobile@1x.png");
 
