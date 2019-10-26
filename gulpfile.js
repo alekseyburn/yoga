@@ -6,6 +6,7 @@ const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const cssnano = require('gulp-cssnano');
 const server = require('browser-sync').create();
 const htmlmin = require('gulp-htmlmin');
 const csso = require('gulp-csso');
@@ -20,6 +21,9 @@ const iife = require('gulp-iife');
 const concat = require('gulp-concat');
 const order = require('gulp-order');
 const ghPages = require('gh-pages');
+const gzip = require('gulp-gzip');
+const purgecss = require('gulp-purgecss');
+const critical = require('critical').stream;
 
 const isProduction = process.env.NODE_ENV;
 
@@ -36,6 +40,9 @@ gulp.task('css', () => {
       .pipe(postcss([
         autoprefixer(),
       ]))
+      .pipe(purgecss({
+        content: ['src/index.html'],
+      }))
       .pipe(gulp.dest('build/css'))
       .pipe(csso())
       .pipe(rename('style.min.css'))
@@ -49,8 +56,34 @@ gulp.task('css', () => {
     .pipe(postcss([
       autoprefixer(),
     ]))
+    .pipe(purgecss({
+      content: ['build/**/*.html'],
+      whitelist: ['active', 'slide-js', 'visible', 'non-visible', 'slideInLeft', 'slideInRight', 'slideOutLeft', 'slideOutRight'],
+    }))
     .pipe(gulp.dest('build/css'))
-    .pipe(csso())
+    // .pipe(critical.generate({
+    //   base: 'build/',
+    //   src: './index.html',
+    //   dest: './index.html',
+    //   inline: true,
+    //   dimensions: [
+    //     {
+    //       height: 480,
+    //       width: 320,
+    //     },
+    //     {
+    //       height: 1080,
+    //       width: 1440,
+    //     },
+    //   ],
+    // }, (err, output) => {
+    //   if (err) {
+    //     console.error(err);
+    //   } else if (output) {
+    //     console.log('Generated critical CSS');
+    //   }
+    // }))
+    .pipe(cssnano())
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
@@ -102,6 +135,7 @@ gulp.task('copy', () => gulp.src([
   'source/img/*.ico',
   'source/css/*.css',
   'source/js/*.js',
+  'source/*.htaccess',
 ], {
   base: 'source',
 })
@@ -125,6 +159,33 @@ gulp.task('server', () => {
   gulp.watch('source/js/**/*.js', gulp.series('js', 'refresh'));
 });
 
+gulp.task('critical', () => gulp
+  .src('build/*.html')
+  .pipe(critical({
+    base: 'build/',
+    inline: true,
+    css: [
+      'build/css/style.min.css',
+    ],
+    dimensions: [{
+      height: 480,
+      width: 320,
+    },
+    {
+      height: 768,
+      width: 1024,
+    },
+    {
+      height: 1080,
+      width: 1440,
+    }],
+    ignore: ['@font-face'],
+  }))
+  .on('error', (err) => {
+    log.error(err.message);
+  })
+  .pipe(gulp.dest('build')));
+
 gulp.task('refresh', (done) => {
   server.reload();
   done();
@@ -134,6 +195,6 @@ gulp.task('deploy', (cb) => {
   ghPages.publish('build', cb);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'webp', 'images', 'sprite', 'js'));
+gulp.task('build', gulp.series('clean', 'copy', 'html', 'css', 'webp', 'images', 'sprite', 'js', 'critical'));
 gulp.task('start', gulp.series('build', 'server'));
 gulp.task('remote', gulp.series('build', 'deploy'));
