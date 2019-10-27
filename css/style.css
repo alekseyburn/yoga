@@ -484,8 +484,7 @@ body {
       transition: right 0.1s ease-out;
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0); }
+      will-change: auto; }
     .first-page__link:hover, .first-page__link:focus {
       color: #8E80A9;
       text-shadow: 0 3px 4px #8E80A9;
