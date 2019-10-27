@@ -23,6 +23,14 @@
   }
 }
 
+.no-webp .lazy.subscriptions {
+  background-image: none;
+}
+
+.webp .lazy.subscriptions {
+  background-image: none;
+}
+
 .no-webp .subscriptions {
   background-image: url("../img/bg-subs-patterns-mobile@1x.png");
 

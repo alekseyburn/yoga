@@ -9,6 +9,14 @@
   background-position: left 145px;
 }
 
+.no-webp .lazy.directions {
+  background-image: none;
+}
+
+.webp .lazy.directions {
+  background-image: none;
+}
+
 .no-webp .directions {
   background-image: url("../img/bg-yoga-patterns-mobile@1x.png");
 

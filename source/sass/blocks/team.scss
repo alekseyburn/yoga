@@ -12,6 +12,14 @@
   }
 }
 
+.no-webp .lazy.team {
+  background-image: none;
+}
+
+.webp .lazy.team {
+  background-image: none;
+}
+
 .no-webp .team {
   background-image: url("../img/bg-team-patterns-mobile@1x.png");
 
