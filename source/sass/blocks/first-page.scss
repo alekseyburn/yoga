@@ -199,16 +199,12 @@
 
       &::before {
         animation: gradient 0.5s ease-out forwards;
-        backface-visibility: hidden;
-        transform: translateZ(0);
       }
 
       &::after {
         right: 0;
 
         transition: right 0.5s ease-out 0.1s;
-        backface-visibility: hidden;
-        transform: translateZ(0);
       }
     }
   }
