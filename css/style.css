@@ -222,7 +222,11 @@ body {
 @media (min-width: 1440px) {
   .button {
     -webkit-transition: background-color 0.3s ease-out;
-    transition: background-color 0.3s ease-out; }
+    transition: background-color 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .button--card {
       width: 45px;
       height: 30px; }
@@ -268,6 +272,10 @@ body {
 .page-header__svg {
   -webkit-transition: stroke 0.1s ease-out;
   transition: stroke 0.1s ease-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   stroke: #8e80a9; }
 
 .page-header__phone {
@@ -275,7 +283,11 @@ body {
   font-size: 12px;
   color: #8E80A9;
   -webkit-transition: color 0.1s ease-out;
-  transition: color 0.1s ease-out; }
+  transition: color 0.1s ease-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
   .page-header__phone:hover, .page-header__phone:focus {
     color: #412A6E; }
   .page-header__phone:active {
@@ -309,7 +321,11 @@ body {
     font-size: 16px;
     line-height: 15px;
     -webkit-transition: color 0.1s ease-out;
-    transition: color 0.1s ease-out; }
+    transition: color 0.1s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .page-header__toggle:hover, .page-header__toggle:focus {
       color: #412A6E; }
       .page-header__toggle:hover .page-header__svg, .page-header__toggle:focus .page-header__svg {
@@ -436,7 +452,11 @@ body {
     font-size: 14px;
     line-height: 150%;
     -webkit-transition: color 0.3s ease-out, text-shadow 0.5s ease-out;
-    transition: color 0.3s ease-out, text-shadow 0.5s ease-out; }
+    transition: color 0.3s ease-out, text-shadow 0.5s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .first-page__link::before {
       width: 56px;
       height: 48px;
@@ -446,7 +466,11 @@ body {
       background-position: center center, -112px center;
       background-size: 14px 20px, 112px 48px;
       -webkit-animation: gradient-rev 0.3s ease-out;
-              animation: gradient-rev 0.3s ease-out; }
+              animation: gradient-rev 0.3s ease-out;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0); }
     .first-page__link::after {
       content: "";
       position: absolute;
@@ -457,18 +481,30 @@ body {
       height: 2px;
       background-color: #8E80A9;
       -webkit-transition: right 0.1s ease-out;
-      transition: right 0.1s ease-out; }
+      transition: right 0.1s ease-out;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0); }
     .first-page__link:hover, .first-page__link:focus {
       color: #8E80A9;
       text-shadow: 0 3px 4px #8E80A9;
       outline: none; }
       .first-page__link:hover::before, .first-page__link:focus::before {
         -webkit-animation: gradient 0.5s ease-out forwards;
-                animation: gradient 0.5s ease-out forwards; }
+                animation: gradient 0.5s ease-out forwards;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
       .first-page__link:hover::after, .first-page__link:focus::after {
         right: 0;
         -webkit-transition: right 0.5s ease-out 0.1s;
-        transition: right 0.5s ease-out 0.1s; }
+        transition: right 0.5s ease-out 0.1s;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
   .first-page__city {
     font-size: 16px; } }
 
@@ -936,7 +972,11 @@ body {
   .subscriptions__link {
     font-size: 12px;
     -webkit-transition: background-color 0.3s ease-out;
-    transition: background-color 0.3s ease-out; }
+    transition: background-color 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .subscriptions__link--main {
       padding: 18px 23px 19px; }
     .subscriptions__link:hover, .subscriptions__link:focus {
@@ -972,7 +1012,11 @@ body {
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
     -webkit-transition-property: left, right;
-    transition-property: left, right; }
+    transition-property: left, right;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
 
 .month-select__input {
   -webkit-appearance: none;
@@ -990,7 +1034,11 @@ body {
   left: 0;
   background: #412A6E;
   -webkit-animation: jump 0.8s infinite;
-          animation: jump 0.8s infinite; }
+          animation: jump 0.8s infinite;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 @media (min-width: 768px) {
   .month-select {
@@ -1311,7 +1359,11 @@ body {
     margin-bottom: 0;
     font-size: 12px;
     -webkit-transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
-    transition: color 0.3s ease-out, text-shadow 0.3s ease-out; }
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .card__watch-link:hover, .card__watch-link:focus {
       color: #412A6E;
       text-shadow: 0 3px 4px #8E80A9; }
@@ -1575,7 +1627,11 @@ body {
         -ms-flex-order: 1;
             order: 1;
     -webkit-transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
-    transition: color 0.3s ease-out, text-shadow 0.3s ease-out; }
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .page-footer__link:hover, .page-footer__link:focus {
       color: #E65C7B;
       text-shadow: 0 3px 4px #8E80A9; }
@@ -1654,7 +1710,11 @@ body {
   .form__send-button {
     cursor: pointer;
     -webkit-transition: background-color 0.3s ease-out;
-    transition: background-color 0.3s ease-out; }
+    transition: background-color 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .form__send-button:hover, .form__send-button:focus {
       background-color: #412A6E;
       -webkit-animation: pulse-min 0.3s ease-out;
@@ -1757,7 +1817,11 @@ body {
   .contacts__phone {
     color: #8E80A9;
     -webkit-transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
-    transition: color 0.3s ease-out, text-shadow 0.3s ease-out; }
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .contacts__phone:hover, .contacts__phone:focus {
       color: #412A6E;
       text-shadow: 0 3px 4px #8E80A9; }
@@ -1766,7 +1830,11 @@ body {
   .contacts__mail {
     color: #8E80A9;
     -webkit-transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
-    transition: color 0.3s ease-out, text-shadow 0.3s ease-out; }
+    transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0); }
     .contacts__mail:hover, .contacts__mail:focus {
       color: #412A6E;
       text-shadow: 0 3px 4px #8E80A9; }
@@ -1819,6 +1887,10 @@ body {
 .social__svg {
   -webkit-transition: fill 0.3s;
   transition: fill 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   fill: #ffffff; }
   .social__svg--card {
     fill: #8E80A9; }
@@ -1949,12 +2021,20 @@ body {
 .slideInLeft {
   z-index: 1000;
   -webkit-animation-name: animateInLeft;
-          animation-name: animateInLeft; }
+          animation-name: animateInLeft;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .slideInRight {
   z-index: 1000;
   -webkit-animation-name: animateInRight;
-          animation-name: animateInRight; }
+          animation-name: animateInRight;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .slideOutLeft {
   -webkit-transform: translateX(-120%);
