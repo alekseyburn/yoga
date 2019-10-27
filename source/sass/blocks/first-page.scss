@@ -159,6 +159,8 @@
     line-height: 150%;
 
     transition: color 0.3s ease-out, text-shadow 0.5s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
     &::before {
       width: 56px;
@@ -170,6 +172,8 @@
       background-size: 14px 20px, 112px 48px;
 
       animation: gradient-rev 0.3s ease-out;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     &::after {
@@ -185,6 +189,8 @@
       background-color: $main-text;
 
       transition: right 0.1s ease-out;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     &:hover,
@@ -196,12 +202,16 @@
 
       &::before {
         animation: gradient 0.5s ease-out forwards;
+        backface-visibility: hidden;
+        transform: translateZ(0);
       }
 
       &::after {
         right: 0;
 
         transition: right 0.5s ease-out 0.1s;
+        backface-visibility: hidden;
+        transform: translateZ(0);
       }
     }
   }

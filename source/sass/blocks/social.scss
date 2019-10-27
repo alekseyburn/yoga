@@ -43,6 +43,8 @@
 
 .social__svg {
   transition: fill 0.3s;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 
   fill: $white;
 

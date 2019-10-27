@@ -35,6 +35,8 @@
     cursor: pointer;
 
     transition: background-color 0.3s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
     &:hover,
     &:focus {
       background-color: $dark-purple;

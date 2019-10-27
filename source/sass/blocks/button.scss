@@ -72,6 +72,8 @@
 @media (min-width: $desktop-width) {
   .button {
     transition: background-color 0.3s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
     &--card {
       width: 45px;

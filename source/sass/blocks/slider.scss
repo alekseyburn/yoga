@@ -20,12 +20,16 @@
   z-index: 1000;
 
   animation-name: animateInLeft;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .slideInRight {
   z-index: 1000;
 
   animation-name: animateInRight;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .slideOutLeft {

@@ -133,9 +133,6 @@
       height: 1000px;
 
       background-size: 100%;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      }
     }
   }
 
@@ -239,9 +236,6 @@
       height: 1000px;
 
       background-size: 100%;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      }
     }
   }
 
@@ -318,6 +312,8 @@
     font-size: $font-size-m;
 
     transition: background-color 0.3s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
     &--main {
       padding: 18px 23px 19px;

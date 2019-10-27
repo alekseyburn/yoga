@@ -18,6 +18,8 @@
 
 .page-header__svg {
   transition: stroke 0.1s ease-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 
   stroke: #8e80a9;
 }
@@ -29,6 +31,8 @@
   color: $main-text;
 
   transition: color 0.1s ease-out;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 
   &:hover,
   &:focus {
@@ -80,6 +84,8 @@
     line-height: 15px;
 
     transition: color 0.1s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
     &:hover,
     &:focus {

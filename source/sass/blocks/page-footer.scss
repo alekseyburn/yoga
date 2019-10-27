@@ -150,6 +150,8 @@
     order: 1;
 
     transition: color 0.3s ease-out, text-shadow 0.3s ease-out;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 
     &:hover,
     &:focus {

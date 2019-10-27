@@ -26,6 +26,8 @@
     transition-timing-function: ease-out;
     transition-duration: 0.3s;
     transition-property: left, right;
+    backface-visibility: hidden;
+    transform: translateZ(0);
   }
 }
 
@@ -48,6 +50,8 @@
   background: $dark-purple;
 
   animation: jump 0.8s infinite;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 @media (min-width: $tablet-width) {
