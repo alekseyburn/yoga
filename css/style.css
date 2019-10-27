@@ -41,17 +41,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain; }
 
-.no-webp.lazy {
-  background-image: none; }
-
 .webp.lazy {
   background-image: none; }
-
-.no-webp {
-  background-image: url("../img/bg-clouds-mobile@1x.png"); }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .no-webp {
-      background-image: url("../img/bg-clouds-mobile@2x.png"); } }
 
 .webp {
   background-image: url("../img/bg-clouds-mobile@1x.webp"); }
@@ -60,25 +51,11 @@ body {
       background-image: url("../img/bg-clouds-mobile@2x.webp"); } }
 
 @media (min-width: 768px) {
-  .no-webp {
-    background-image: url("../img/bg-clouds-tablet@1x.png"); } }
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-    .no-webp {
-      background-image: url("../img/bg-clouds-tablet@2x.png"); } }
-
-@media (min-width: 768px) {
   .webp {
     background-image: url("../img/bg-clouds-tablet@1x.webp"); } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .webp {
       background-image: url("../img/bg-clouds-tablet@2x.webp"); } }
-
-@media (min-width: 1440px) {
-  .no-webp {
-    background-image: url("../img/bg-clouds-desktop@1x.png"); } }
-  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-    .no-webp {
-      background-image: url("../img/bg-clouds-desktop@2x.png"); } }
 
 @media (min-width: 1440px) {
   .webp {
@@ -213,9 +190,6 @@ body {
     background-image: url("../img/icon-arrow-right.svg"); }
   .button--left {
     background-image: url("../img/icon-arrow-left.svg"); }
-  .button--disabled {
-    background-color: transparent;
-    border: 1px solid #8E80A9; }
   .button--reviews {
     width: 31px;
     height: 16px;
@@ -371,14 +345,8 @@ body {
   background-repeat: no-repeat;
   background-position-x: center; }
 
-.no-webp .lazy.first-page__slogan {
-  background-image: none; }
-
 .webp .lazy.first-page__slogan {
   background-image: none; }
-
-.no-webp .first-page__slogan {
-  background-image: url("../img/img-slogan-mobile@1x.png"); }
 
 .webp .first-page__slogan {
   background-image: url("../img/img-slogan-mobile@1x.webp"); }
@@ -429,8 +397,6 @@ body {
     margin-right: 140px;
     margin-bottom: 10px;
     padding-top: 23px; }
-  .no-webp .first-page__slogan {
-    background-image: url("../img/img-slogan-tablet@1x.png"); }
   .webp .first-page__slogan {
     background-image: url("../img/img-slogan-tablet@1x.webp"); }
   .first-page__title {
@@ -456,8 +422,6 @@ body {
     margin-right: 250px;
     margin-bottom: 49px;
     padding-top: 42px; }
-  .no-webp .first-page__slogan {
-    background-image: url("../img/img-slogan-desktop@1x.png"); }
   .webp .first-page__slogan {
     background-image: url("../img/img-slogan-desktop@1x.webp"); }
   .first-page__title {
@@ -521,18 +485,8 @@ body {
   background-repeat: no-repeat;
   background-position: left 145px; }
 
-.no-webp .lazy.directions {
-  background-image: none; }
-
 .webp .lazy.directions {
   background-image: none; }
-
-.no-webp .directions {
-  background-image: url("../img/bg-yoga-patterns-mobile@1x.png"); }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .no-webp .directions {
-      background-image: url("../img/bg-yoga-patterns-mobile@2x.png");
-      background-size: 216px 494px; } }
 
 .webp .directions {
   background-image: url("../img/bg-yoga-patterns-mobile@1x.webp"); }
@@ -608,13 +562,7 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 67px 120px 78px;
-    background-position: left -20px; }
-  .no-webp .directions {
-    background-image: url("../img/bg-yoga-patterns-tablet@1x.png"); } }
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-    .no-webp .directions {
-      background-image: url("../img/bg-yoga-patterns-tablet@2x.png");
-      background-size: 693px 397px; } }
+    background-position: left -20px; } }
 
 @media (min-width: 768px) {
   .webp .directions {
@@ -725,13 +673,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 275px 125px 240px;
-    background-position: 58% -61px; }
-  .no-webp .directions {
-    background-image: url("../img/bg-yoga-patterns-desktop@1x.png"); } }
-  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-    .no-webp .directions {
-      background-image: url("../img/bg-yoga-patterns-desktop@2x.png");
-      background-size: 1257px 722px; } }
+    background-position: 58% -61px; } }
 
 @media (min-width: 1440px) {
   .webp .directions {
@@ -823,23 +765,8 @@ body {
     background-position: center;
     background-size: cover; }
 
-.no-webp .lazy.subscriptions {
-  background-image: none; }
-
 .webp .lazy.subscriptions {
   background-image: none; }
-
-.no-webp .subscriptions {
-  background-image: url("../img/bg-subs-patterns-mobile@1x.png"); }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .no-webp .subscriptions {
-      background-image: url("../img/bg-subs-patterns-mobile@2x.png");
-      background-size: 307px 274px; } }
-  .no-webp .subscriptions::after {
-    background-image: url("../img/bg-subs-clouds-mobile@1x.png"); }
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .no-webp .subscriptions::after {
-        background-image: url("../img/bg-subs-clouds-mobile@2x.png"); } }
 
 .webp .subscriptions {
   background-image: url("../img/bg-subs-patterns-mobile@1x.webp"); }
@@ -902,14 +829,7 @@ body {
     .subscriptions::after {
       top: -295px;
       height: 1000px;
-      background-size: 100%; }
-  .no-webp .subscriptions {
-    background-image: none; }
-    .no-webp .subscriptions::after {
-      background-image: url("../img/bg-subs-clouds-tablet@1x.png"); } }
-    @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-      .no-webp .subscriptions::after {
-        background-image: url("../img/bg-subs-clouds-tablet@2x.png"); } }
+      background-size: 100%; } }
 
 @media (min-width: 768px) {
   .webp .subscriptions {
@@ -971,12 +891,7 @@ body {
     .subscriptions::after {
       top: -140px;
       height: 1000px;
-      background-size: 100%; }
-  .no-webp .subscriptions::after {
-    background-image: url("../img/bg-subs-clouds-desktop@1x.png"); } }
-  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-    .no-webp .subscriptions::after {
-      background-image: url("../img/bg-subs-clouds-desktop@2x.png"); } }
+      background-size: 100%; } }
 
 @media (min-width: 1440px) {
   .webp .subscriptions::after {
@@ -1100,17 +1015,8 @@ body {
       background-position: left -19px;
       background-size: contain; } }
 
-.no-webp .lazy.team {
-  background-image: none; }
-
 .webp .lazy.team {
   background-image: none; }
-
-.no-webp .team {
-  background-image: url("../img/bg-team-patterns-mobile@1x.png"); }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .no-webp .team {
-      background-image: url("../img/bg-team-patterns-mobile@2x.png"); } }
 
 .webp .team {
   background-image: url("../img/bg-team-patterns-mobile@1x.webp"); }
@@ -1162,12 +1068,7 @@ body {
     padding: 0 67px 136px 78px;
     background-repeat: no-repeat;
     background-position: 0 19%;
-    background-size: contain; }
-  .no-webp .team {
-    background-image: url("../img/bg-team-patterns-tablet@1x.png"); } }
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-    .no-webp .team {
-      background-image: url("../img/bg-team-patterns-tablet@2x.png"); } }
+    background-size: contain; } }
 
 @media (min-width: 768px) {
   .webp .team {
@@ -1248,19 +1149,7 @@ body {
       height: 1326px;
       background-repeat: no-repeat;
       background-position: left center;
-      background-size: 1084px; }
-  .no-webp .team {
-    background-image: url("../img/bg-subs-patterns-desktop@1x.png"); } }
-  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-    .no-webp .team {
-      background-image: url("../img/bg-subs-patterns-desktop@2x.png"); } }
-
-@media (min-width: 1440px) {
-    .no-webp .team::after {
-      background-image: url("../img/bg-team-patterns-desktop@1x.png"); } }
-    @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-      .no-webp .team::after {
-        background-image: url("../img/bg-team-patterns-desktop@2x.png"); } }
+      background-size: 1084px; } }
 
 @media (min-width: 1440px) {
   .webp .team {
@@ -1496,11 +1385,6 @@ body {
   margin-bottom: 7px;
   color: rgba(142, 128, 169, 0.7); }
 
-.reviews__link {
-  display: block;
-  margin-right: 11px;
-  line-height: 0; }
-
 .reviews__slider-wrapper {
   position: relative;
   z-index: 2;
@@ -1618,15 +1502,8 @@ body {
     background-color: #F2EDFF;
     background-repeat: no-repeat;
     background-size: contain; }
-  .no-webp .lazy.page-footer {
-    background-image: none; }
   .webp .lazy.page-footer {
-    background-image: none; }
-  .no-webp .page-footer {
-    background-image: url("../img/bg-footer-clouds-desktop@1x.jpg"); } }
-  @media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
-    .no-webp .page-footer {
-      background-image: url("../img/bg-footer-clouds-desktop@2x.jpg"); } }
+    background-image: none; } }
 
 @media (min-width: 1440px) {
   .webp .page-footer {
@@ -1711,17 +1588,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.no-webp .lazy.record {
-  background-image: none; }
-
 .webp .lazy.record {
   background-image: none; }
-
-.no-webp .record {
-  background-image: url("../img/bg-footer-clouds-mobile@1x.jpg"); }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .no-webp .record {
-      background-image: url("../img/bg-footer-clouds-mobile@2x.jpg"); } }
 
 .webp .record {
   background-image: url("../img/bg-footer-clouds-mobile@1x.webp"); }
@@ -1736,12 +1604,7 @@ body {
 
 @media (min-width: 768px) {
   .record {
-    padding: 69px 179px 69px 182px; }
-  .no-webp .record {
-    background-image: url("../img/bg-footer-clouds-tablet@1x.jpg"); } }
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
-    .no-webp .record {
-      background-image: url("../img/bg-footer-clouds-tablet@2x.jpg"); } }
+    padding: 69px 179px 69px 182px; } }
 
 @media (min-width: 768px) {
   .webp .record {
@@ -1760,8 +1623,6 @@ body {
   .record {
     padding: 0;
     background-color: transparent; }
-  .no-webp .record {
-    background-image: none; }
   .webp .record {
     background-image: none; }
   .record__title {
@@ -2069,9 +1930,6 @@ body {
     font-size: 21px; } }
 
 @media (min-width: 1440px) {
-  .section__width-container {
-    max-width: 1440px;
-    margin: 0 auto; }
   .section__title {
     font-size: 30px; } }
 
