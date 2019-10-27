@@ -190,7 +190,7 @@
 
       transition: right 0.1s ease-out;
       backface-visibility: hidden;
-      transform: translateZ(0);
+      will-change: auto;
     }
 
     &:hover,
