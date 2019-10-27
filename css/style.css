@@ -486,19 +486,11 @@ body {
       outline: none; }
       .first-page__link:hover::before, .first-page__link:focus::before {
         -webkit-animation: gradient 0.5s ease-out forwards;
-                animation: gradient 0.5s ease-out forwards;
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        -webkit-transform: translateZ(0);
-                transform: translateZ(0); }
+                animation: gradient 0.5s ease-out forwards; }
       .first-page__link:hover::after, .first-page__link:focus::after {
         right: 0;
         -webkit-transition: right 0.5s ease-out 0.1s;
-        transition: right 0.5s ease-out 0.1s;
-        -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-        -webkit-transform: translateZ(0);
-                transform: translateZ(0); }
+        transition: right 0.5s ease-out 0.1s; }
   .first-page__city {
     font-size: 16px; } }
 
